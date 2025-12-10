@@ -1,4 +1,4 @@
-# 🔒CIS Benchmark Automation for Ubuntu 24.04 — Level 1  
+# 🔒 CIS Benchmark Automation for Ubuntu 24.04 Level 1  
 **Automated Check & Remediation Framework | 405 Controls Coverage**
 
 This project provides a fully automated solution to **audit and remediate CIS Benchmark Level 1** requirements for **Ubuntu 24.04 (Noble Numbat)**.  
