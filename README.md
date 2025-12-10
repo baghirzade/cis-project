@@ -1,108 +1,70 @@
-🔒 CIS Benchmark Automation for Ubuntu 24.04 — Level 1
+# 🔒 CIS Benchmark Automation for Ubuntu 24.04 — Level 1  
+**Automated Check & Remediation Framework | 405 Controls Coverage**
 
-Automated Check & Remediation Framework | 405 Controls Coverage
+This project provides a fully automated solution to **audit and remediate CIS Benchmark Level 1** requirements for **Ubuntu 24.04 (Noble Numbat)**.  
+All 405 rules are implemented with dedicated check and remediation logic, producing clear, color-coded, and fully traceable compliance results.
 
-This project provides a fully automated solution to audit and remediate CIS Benchmark Level 1 requirements for Ubuntu 24.04 (Noble Numbat).
-It includes a modular architecture with individual check and remediation scripts for all 405 CIS rules, producing a detailed compliance report with color-coded status indicators.
+Whether you're securing a single server or a large-scale environment, this framework ensures consistency, repeatability, and reliable CIS hardening.
 
-Whether you're securing a single server or managing enterprise-scale infrastructure, this framework delivers clarity, repeatability, and reliability.
+---
 
-✨ Features
+## ✨ Features
 
-✅ Full CIS Level 1 coverage for Ubuntu 24.04
+- 🔐 **Complete CIS Level 1 coverage** for Ubuntu 24.04  
+- 📝 **Separate check and remediation logic** for every rule  
+- 🎨 **Color-coded output** (PASS / WARN / FAIL / SKIP / NOTAPPL)  
+- 📊 **Detailed audit reports** saved with timestamps  
+- 🔁 **Idempotent and safe remediation actions**  
+- ⚙️ Suitable for DevSecOps, SOC teams, compliance pipelines, security audits
 
-🧩 Modular structure — each rule has dedicated check and remediation logic
+---
 
-📊 Human-readable and machine-parsable reports
+## 🚀 Usage
 
-🎨 Color-coded output (PASS/WARN/FAIL/SKIP/NOT APPLICABLE)
-
-🔁 Safe remediation workflow with backups and idempotent operations
-
-🧪 Designed for CI/CD, configuration management, and security pipelines
-
-📁 Structured layout:
-
-cis-project/
-├─ checks/
-├─ remediation/
-├─ lib/
-├─ reports/
-└─ cis-audit.sh
-
-
-🛡️ Suitable for servers, cloud images, virtual machines and containers
-
-🚀 Getting Started
-1. Clone the repository
-git clone https://github.com/<yourusername>/cis-project.git
-cd cis-project
-
-2. Run CIS Audit (Check Only)
+### Run CIS Audit
+```bash
 sudo ./cis-audit.sh
+```
 
-3. Run CIS Remediation for a Specific Rule
-sudo ./remediation/<rule_id>.sh
+### Run Full Remediation
+```bash
+sudo ./remediation.sh
+```
 
-4. Review Reports
-
-All logs are stored under ./reports/ with timestamps:
-
+### View Reports
+Audit results are stored automatically:
+```
 reports/cis-audit-YYYYMMDD-HHMMSS.log
+```
 
-📦 Requirements
+---
 
-Ubuntu 24.04 LTS
+## 📦 Requirements
 
-Bash 5.x
+- Ubuntu 24.04 LTS  
+- Bash 5.x  
+- Root privileges  
 
-Root privileges
+---
 
-Optional: sysctl, apt, auditd, systemd tools depending on rule
+## 🔐 Why This Project?
 
-🛠️ Architecture Overview
-✔ Check Scripts
+- Automates the entire CIS Level 1 audit and remediation process  
+- Removes manual errors and ensures consistent hardening  
+- Produces structured output ideal for monitoring or CI/CD  
+- Easy to extend with new rules or custom compliance policies  
 
-Each check script returns structured output:
+---
 
-PASS|rule_id|description
-WARN|rule_id|description
-FAIL|rule_id|details
-NOTAPPL|rule_id|reason
-SKIP|rule_id|reason
+## 📧 Need CIS Level 2 or Multi-Distro Support?
 
-✔ Remediation Scripts
+If you want **Ubuntu 24.04 CIS Level 2** automation  
+or a **CIS audit/remediation system for any Linux distribution**  
+(RHEL, Rocky, AlmaLinux, CentOS, Debian, Amazon Linux, openSUSE, etc.),  
+feel free to contact me — I can extend or customize this framework for your infrastructure.
 
-Each remediation script is safe, isolated, and can be executed independently:
+---
 
-Backs up configs before changes
+## 🤝 Contributions
 
-Validates post-remediation
-
-Avoids breaking system defaults
-
-🔐 Why This Project?
-
-CIS hardening is essential but time-consuming.
-This framework brings:
-
-Consistency across systems
-
-Automation for compliance teams
-
-Transparency with clear logs
-
-Extensibility for additional benchmarks
-
-It is ideal for SOC teams, DevSecOps pipelines, auditors, and enterprise security environments.
-
-📧 Need CIS Level 2 or Support for Other Linux Distributions?
-
-If you want CIS Level 2 for Ubuntu 24.04 or a cross-distro CIS hardening service
-(CentOS, Rocky, AlmaLinux, RHEL, Debian, openSUSE, Amazon Linux, etc.),
-feel free to contact me — I can help you extend this framework or tailor it to your infrastructure.
-
-🤝 Contributions
-
-Contributions, improvements, and suggestions are welcome!
-Feel free to open issues or submit PRs.
+Ideas, improvements, and pull requests are always welcome.
