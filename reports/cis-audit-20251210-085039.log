@@ -1,0 +1,405 @@
+WARN|xccdf_org.ssgproject.content_rule_account_disable_post_pw_expiration|INACTIVE is not set in /etc/default/useradd (accounts may never be disabled after password expiration)
+OK|xccdf_org.ssgproject.content_rule_account_unique_id|All user IDs in /etc/passwd are unique
+OK|xccdf_org.ssgproject.content_rule_account_unique_name|All user account names in /etc/passwd are unique
+WARN|xccdf_org.ssgproject.content_rule_accounts_maximum_age_login_defs|PASS_MAX_DAYS is set to 99999 days (should be between 1 and 365)
+OK|xccdf_org.ssgproject.content_rule_accounts_no_uid_except_zero|Only 'root' account has UID 0
+OK|xccdf_org.ssgproject.content_rule_accounts_password_all_shadowed|All accounts use shadowed passwords (no hashes in /etc/passwd)
+OK|xccdf_org.ssgproject.content_rule_accounts_password_last_change_is_in_past|All accounts have a valid password last change date in the past
+NOTAPPL|xccdf_org.ssgproject.content_rule_accounts_password_pam_dcredit|libpwquality1 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_accounts_password_pam_dictcheck|libpwquality1 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_accounts_password_pam_difok|libpwquality1 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_accounts_password_pam_enforce_root|libpwquality1 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_accounts_password_pam_enforcing|libpwquality1 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_accounts_password_pam_lcredit|libpwquality1 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_accounts_password_pam_maxrepeat|libpwquality1 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_accounts_password_pam_maxsequence|libpwquality1 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_accounts_password_pam_minclass|libpwquality1 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_accounts_password_pam_minlen|libpwquality1 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_accounts_password_pam_ocredit|libpwquality1 is not installed (control not applicable)
+WARN|xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_enabled|pam_pwhistory is not enabled in /etc/pam.d/common-password for password history enforcement
+WARN|xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_enforce_root|pam_pwhistory is not configured with enforce_for_root in /etc/pam.d/common-password
+WARN|xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_remember|pam_pwhistory configuration file /usr/share/pam-configs/cac_pwhistory is missing (password history enforcement not configured)
+WARN|xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_use_authtok|pam_pwhistory configuration file /usr/share/pam-configs/cac_pwhistory is missing
+WARN|xccdf_org.ssgproject.content_rule_accounts_password_pam_pwquality_enabled|libpam-pwquality is not installed; pam_pwquality is not available in PAM stack
+NOTAPPL|xccdf_org.ssgproject.content_rule_accounts_password_pam_ucredit|libpwquality1 is not installed (control not applicable)
+WARN|xccdf_org.ssgproject.content_rule_accounts_password_pam_unix_authtok|PAM configuration /usr/share/pam-configs/cac_unix does not exist (unix profile likely in use)
+OK|xccdf_org.ssgproject.content_rule_accounts_password_pam_unix_enabled|pam_unix is enabled in /etc/pam.d/common-password for password authentication
+OK|xccdf_org.ssgproject.content_rule_accounts_password_pam_unix_no_remember|pam_unix is not configured with remember= option
+WARN|xccdf_org.ssgproject.content_rule_accounts_password_set_max_life_existing|Accounts with password max life > 365 days or unset: root, fazil
+OK|xccdf_org.ssgproject.content_rule_accounts_password_warn_age_login_defs|PASS_WARN_AGE is set to 7 days (>= 7) in /etc/login.defs
+WARN|xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_deny|pam_faillock is not configured in the PAM stack
+WARN|xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_enabled|pam_faillock.so is not enabled in common-auth/common-account PAM stack
+WARN|xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_unlock_time|unlock_time is not set in /etc/security/faillock.conf
+OK|xccdf_org.ssgproject.content_rule_accounts_root_gid_zero|root account has primary group ID 0 (root group)
+SKIPPED|xccdf_org.ssgproject.content_rule_accounts_root_path_dirs_no_write|Skipped via config/skip-controls.conf
+WARN|xccdf_org.ssgproject.content_rule_accounts_set_post_pw_existing|Accounts with inactive period unset or > 45 days: root fazil
+WARN|xccdf_org.ssgproject.content_rule_accounts_tmout|TMOUT is not set in any of /etc/bash.bashrc, /etc/profile or /etc/profile.d/*.sh
+WARN|xccdf_org.ssgproject.content_rule_accounts_umask_etc_bashrc|No active umask setting found in /etc/bash.bashrc
+WARN|xccdf_org.ssgproject.content_rule_accounts_umask_etc_login_defs|Found UMASK '022' (expected 027)
+WARN|xccdf_org.ssgproject.content_rule_accounts_umask_etc_profile|No umask setting found in /etc/profile or /etc/profile.d
+WARN|xccdf_org.ssgproject.content_rule_accounts_umask_root|No umask setting found in /root/.bashrc or /root/.profile
+OK|xccdf_org.ssgproject.content_rule_accounts_user_dot_group_ownership|All user dotfiles in home directories are group-owned by the users' primary groups
+OK|xccdf_org.ssgproject.content_rule_accounts_user_dot_user_ownership|All user dotfiles in home directories are owned by their respective users
+OK|xccdf_org.ssgproject.content_rule_accounts_user_interactive_home_directory_exists|All interactive users have an existing home directory
+OK|xccdf_org.ssgproject.content_rule_aide_build_database|AIDE database is configured and present at /var/lib/aide/aide.db
+OK|xccdf_org.ssgproject.content_rule_aide_periodic_checking_systemd_timer|AIDE periodic checking is configured via dailyaidecheck.timer (enabled and active)
+OK|xccdf_org.ssgproject.content_rule_all_apparmor_profiles_in_enforce_complain_mode|AppArmor active with enforce/complain profiles
+WARN|xccdf_org.ssgproject.content_rule_banner_etc_issue_cis|/etc/issue banner does not match the CIS-required text
+WARN|xccdf_org.ssgproject.content_rule_banner_etc_issue_net_cis|/etc/issue.net banner does not match the CIS-required text
+WARN|xccdf_org.ssgproject.content_rule_banner_etc_motd_cis|/etc/motd does not exist
+NOTAPPL|xccdf_org.ssgproject.content_rule_check_ufw_active|Selected firewall is '', not ufw
+WARN|xccdf_org.ssgproject.content_rule_chronyd_configure_pool_and_server|chrony.conf missing
+WARN|xccdf_org.ssgproject.content_rule_chronyd_run_as_chrony_user|chrony.conf missing
+NOTAPPL|xccdf_org.ssgproject.content_rule_dconf_gnome_banner_enabled|gdm3 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_dconf_gnome_disable_automount|gdm3 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_dconf_gnome_disable_automount_open|gdm3 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_dconf_gnome_disable_autorun|gdm3 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_dconf_gnome_disable_user_list|gdm3 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_dconf_gnome_login_banner_text|gdm3 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_idle_delay|gdm3 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_lock_delay|gdm3 is not installed (control not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_lock_enabled|gdm3 is not installed (control not applicable)
+OK|xccdf_org.ssgproject.content_rule_disable_host_auth|HostbasedAuthentication is correctly set to no.
+WARN|xccdf_org.ssgproject.content_rule_disable_users_coredumps|Core dumps are NOT fully disabled
+WARN|xccdf_org.ssgproject.content_rule_ensure_pam_wheel_group_empty|Group 'sugroup' does not exist (remediation will create it)
+SKIPPED|xccdf_org.ssgproject.content_rule_ensure_root_access_controlled|Skipped via config/skip-controls.conf
+OK|xccdf_org.ssgproject.content_rule_ensure_shadow_group_empty|shadow group has no members (group is empty as required)
+WARN|xccdf_org.ssgproject.content_rule_file_at_allow_exists|/etc/at.allow does NOT exist
+WARN|xccdf_org.ssgproject.content_rule_file_cron_allow_exists|/etc/cron.allow does NOT exist
+OK|xccdf_org.ssgproject.content_rule_file_cron_deny_not_exist|/etc/cron.deny does not exist as required
+WARN|xccdf_org.ssgproject.content_rule_file_groupowner_at_allow|/etc/at.allow does not exist
+WARN|xccdf_org.ssgproject.content_rule_file_groupowner_at_deny|/etc/at.deny does not exist
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_backup_etc_group|Group ownership of /etc/group- is correctly set to GID 0.
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_backup_etc_gshadow|/etc/gshadow- group owner is correctly set to shadow
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_backup_etc_passwd|Group ownership of /etc/passwd- is correctly set to GID 0.
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_backup_etc_shadow|/etc/shadow- group owner is correctly set to shadow
+WARN|xccdf_org.ssgproject.content_rule_file_groupowner_cron_allow|/etc/cron.allow does not exist
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_cron_d|Group owner of /etc/cron.d is root (0)
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_cron_daily|Group owner of /etc/cron.daily is root (0)
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_cron_hourly|Group owner of /etc/cron.hourly is root (0)
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_cron_monthly|Group owner of /etc/cron.monthly is root (0)
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_cron_weekly|Group owner of /etc/cron.weekly is root (0)
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_crontab|Group owner of /etc/crontab is root (0)
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_etc_group|Group ownership of /etc/group is correctly set to GID 0.
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_etc_gshadow|/etc/gshadow group owner is correctly set to shadow
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_etc_issue|/etc/issue is group-owned by GID 0 (root)
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_etc_issue_net|/etc/issue.net is group-owned by GID 0 (root)
+WARN|xccdf_org.ssgproject.content_rule_file_groupowner_etc_motd|/etc/motd does not exist (cannot verify group owner)
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_etc_passwd|Group ownership of /etc/passwd is correctly set to GID 0.
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_etc_security_opasswd|/etc/security/opasswd group owner is root
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_etc_security_opasswd_old|Target file /etc/security/opasswd.old does not exist. Compliance assumed.
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_etc_shadow|/etc/shadow group owner is shadow
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_etc_shells|Group ownership of /etc/shells is correctly set to GID 0.
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_sshd_config|SSHD config file group owner is correct (root, GID 0).
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_var_log_auth|Group owner is 'adm'
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_var_log_cloud_init|All cloud-init log files have correct group ownership
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_var_log_journal|/var/log/journal/adf6e4ddb8486e3242ca328d4bccbf6f/system.journal group is 'systemd-journal'
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_var_log_lastlog|/var/log/lastlog group is 'utmp'
+NOTAPPL|xccdf_org.ssgproject.content_rule_file_groupowner_var_log_localmessages|No localmessages files found
+NOTAPPL|xccdf_org.ssgproject.content_rule_file_groupowner_var_log_messages|/var/log/messages does not exist
+NOTAPPL|xccdf_org.ssgproject.content_rule_file_groupowner_var_log_secure|No /var/log/secure* files found
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_var_log_syslog|/var/log/syslog group 'adm' is compliant
+NOTAPPL|xccdf_org.ssgproject.content_rule_file_groupowner_var_log_waagent|No waagent.log files found
+OK|xccdf_org.ssgproject.content_rule_file_groupowner_var_log_wbtmp|/var/log/btmp group 'utmp' is compliant
+OK|xccdf_org.ssgproject.content_rule_file_groupownership_home_directories|All interactive users' home directories have correct group ownership
+OK|xccdf_org.ssgproject.content_rule_file_groupownerships_var_log|All /var/log file group-owners are compliant
+OK|xccdf_org.ssgproject.content_rule_file_groupownerships_var_log_apt|/var/log/apt/term.log group 'adm' is compliant
+NOTAPPL|xccdf_org.ssgproject.content_rule_file_groupownerships_var_log_gdm|No files found under /var/log/gdm/
+NOTAPPL|xccdf_org.ssgproject.content_rule_file_groupownerships_var_log_gdm3|No files found under /var/log/gdm3/
+OK|xccdf_org.ssgproject.content_rule_file_groupownerships_var_log_landscape|/var/log/landscape/sysinfo.log group 'landscape' is compliant
+NOTAPPL|xccdf_org.ssgproject.content_rule_file_groupownerships_var_log_sssd|No files found under /var/log/sssd/
+WARN|xccdf_org.ssgproject.content_rule_file_owner_at_allow|/etc/at.allow does not exist
+WARN|xccdf_org.ssgproject.content_rule_file_owner_at_deny|/etc/at.deny does not exist
+OK|xccdf_org.ssgproject.content_rule_file_owner_backup_etc_group|owner of /etc/group- is root
+OK|xccdf_org.ssgproject.content_rule_file_owner_backup_etc_gshadow|User ownership of /etc/gshadow- is correctly set to UID 0.
+OK|xccdf_org.ssgproject.content_rule_file_owner_backup_etc_passwd|/etc/passwd- owner is root
+OK|xccdf_org.ssgproject.content_rule_file_owner_backup_etc_shadow|User ownership of /etc/shadow- is correctly set to UID 0.
+WARN|xccdf_org.ssgproject.content_rule_file_owner_cron_allow|/etc/cron.allow does not exist
+OK|xccdf_org.ssgproject.content_rule_file_owner_cron_d|Owner of /etc/cron.d is root (0)
+OK|xccdf_org.ssgproject.content_rule_file_owner_cron_daily|Owner of /etc/cron.daily is root (0)
+OK|xccdf_org.ssgproject.content_rule_file_owner_cron_hourly|Owner of /etc/cron.hourly is root (0)
+OK|xccdf_org.ssgproject.content_rule_file_owner_cron_monthly|Owner of /etc/cron.monthly is root (0)
+OK|xccdf_org.ssgproject.content_rule_file_owner_cron_weekly|Owner of /etc/cron.weekly is root (0)
+OK|xccdf_org.ssgproject.content_rule_file_owner_crontab|/etc/crontab owner is root (0)
+OK|xccdf_org.ssgproject.content_rule_file_owner_etc_group|/etc/group owner is root
+OK|xccdf_org.ssgproject.content_rule_file_owner_etc_gshadow|User ownership of /etc/gshadow is correctly set to UID 0.
+OK|xccdf_org.ssgproject.content_rule_file_owner_etc_issue|/etc/issue is owned by UID 0 (root)
+OK|xccdf_org.ssgproject.content_rule_file_owner_etc_issue_net|/etc/issue.net is owned by UID 0 (root)
+WARN|xccdf_org.ssgproject.content_rule_file_owner_etc_motd|/etc/motd does not exist (cannot verify owner)
+OK|xccdf_org.ssgproject.content_rule_file_owner_etc_passwd|/etc/passwd owner is root
+OK|xccdf_org.ssgproject.content_rule_file_owner_etc_security_opasswd|User ownership of /etc/security/opasswd is correctly set to UID 0.
+NOTAPPL|xccdf_org.ssgproject.content_rule_file_owner_etc_security_opasswd_old|/etc/security/opasswd.old does not exist
+OK|xccdf_org.ssgproject.content_rule_file_owner_etc_shadow|User ownership of /etc/shadow is correctly set to UID 0.
+OK|xccdf_org.ssgproject.content_rule_file_owner_etc_shells|/etc/shells owner is root
+OK|xccdf_org.ssgproject.content_rule_file_owner_grub2_cfg|/boot/grub/grub.cfg is correctly owned by root (uid 0)
+OK|xccdf_org.ssgproject.content_rule_file_owner_sshd_config|SSHD config file owner is correct (root, UID 0).
+OK|xccdf_org.ssgproject.content_rule_file_owner_var_log_auth|/var/log/auth.log owner 'syslog' is compliant
+OK|xccdf_org.ssgproject.content_rule_file_owner_var_log_cloud_init|/var/log/cloud-init.log owner 'syslog' is compliant
+OK|xccdf_org.ssgproject.content_rule_file_owner_var_log_journal|/var/log/journal/adf6e4ddb8486e3242ca328d4bccbf6f/system.journal owner '0' is compliant
+OK|xccdf_org.ssgproject.content_rule_file_owner_var_log_lastlog|/var/log/lastlog owner '0' is compliant
+NOTAPPL|xccdf_org.ssgproject.content_rule_file_owner_var_log_localmessages|No localmessages files found
+NOTAPPL|xccdf_org.ssgproject.content_rule_file_owner_var_log_messages|/var/log/messages not found
+NOTAPPL|xccdf_org.ssgproject.content_rule_file_owner_var_log_secure|No secure log files found
+OK|xccdf_org.ssgproject.content_rule_file_owner_var_log_syslog|/var/log/syslog owner 'syslog' is compliant
+NOTAPPL|xccdf_org.ssgproject.content_rule_file_owner_var_log_waagent|No waagent log files found
+OK|xccdf_org.ssgproject.content_rule_file_owner_var_log_wbtmp|All wtmp/btmp files are owned by root
+OK|xccdf_org.ssgproject.content_rule_file_ownership_home_directories|All interactive users' home directories have correct user ownership
+WARN|xccdf_org.ssgproject.content_rule_file_ownerships_var_log|Non-compliant files detected:
+OK|xccdf_org.ssgproject.content_rule_file_ownerships_var_log_apt|All /var/log/apt files have compliant ownership (root)
+OK|xccdf_org.ssgproject.content_rule_file_ownerships_var_log_gdm|All /var/log/gdm files are owned by root
+OK|xccdf_org.ssgproject.content_rule_file_ownerships_var_log_gdm3|All /var/log/gdm3 files are owned by root
+OK|xccdf_org.ssgproject.content_rule_file_ownerships_var_log_landscape|All /var/log/landscape files are owned by root or landscape
+OK|xccdf_org.ssgproject.content_rule_file_ownerships_var_log_sssd|All /var/log/sssd files are owned by root or sssd
+OK|xccdf_org.ssgproject.content_rule_file_permission_user_bash_history|All existing .bash_history files have restrictive permissions (u=rw,go=)
+WARN|xccdf_org.ssgproject.content_rule_file_permission_user_init_files|Some user init files have too-permissive or incorrect permissions: user=fazil file=/home/fazil/.bashrc perm=-rw-r--r--; user=fazil file=/home/fazil/.bash_history perm=-rw-------; user=fazil file=/home/fazil/.Xauthority perm=-rw-------; user=fazil file=/home/fazil/.profile perm=-rw-r--r--; user=fazil file=/home/fazil/.wget-hsts perm=-rw-rw-r--; user=fazil file=/home/fazil/.bash_logout perm=-rw-r--r--; user=fazil file=/home/fazil/.sudo_as_admin_successful perm=-rw-r--r--;
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_at_allow|/etc/at.allow does not exist
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_at_deny|/etc/at.deny does not exist
+OK|xccdf_org.ssgproject.content_rule_file_permissions_backup_etc_group|Permissions on /etc/group- are acceptable (Current: 644, Max: 0644, no special bits).
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_backup_etc_gshadow|Permissions are 640 (expected: 600)
+OK|xccdf_org.ssgproject.content_rule_file_permissions_backup_etc_passwd|Permissions on /etc/passwd- are acceptable (Current: 644, Max: 0644, no special bits).
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_backup_etc_shadow|Permissions are 640 (expected: 600)
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_cron_allow|/etc/cron.allow does not exist
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_cron_d|Invalid permissions on /etc/cron.d (perm=755)
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_cron_daily|Invalid permissions on /etc/cron.daily (perm=755)
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_cron_hourly|Invalid permissions on /etc/cron.hourly (perm=755)
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_cron_monthly|Invalid permissions on /etc/cron.monthly (perm=755)
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_cron_weekly|Invalid permissions on /etc/cron.weekly (perm=755)
+OK|xccdf_org.ssgproject.content_rule_file_permissions_crontab|Permissions on /etc/crontab are secure (perm=644)
+OK|xccdf_org.ssgproject.content_rule_file_permissions_etc_group|Permissions on /etc/group are acceptable (Current: 644, Max: 0644, no special bits).
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_etc_gshadow|Permissions are 640 (expected: 600)
+OK|xccdf_org.ssgproject.content_rule_file_permissions_etc_issue|/etc/issue has correct permissions 0644
+OK|xccdf_org.ssgproject.content_rule_file_permissions_etc_issue_net|/etc/issue.net has correct permissions 0644
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_etc_motd|/etc/motd does not exist (cannot verify permissions)
+OK|xccdf_org.ssgproject.content_rule_file_permissions_etc_passwd|Permissions on /etc/passwd are acceptable (Current: 644, Max: 0644, no special bits).
+OK|xccdf_org.ssgproject.content_rule_file_permissions_etc_security_opasswd|Permissions are correct (600)
+OK|xccdf_org.ssgproject.content_rule_file_permissions_etc_security_opasswd_old|Target file /etc/security/opasswd.old does not exist. Compliance assumed.
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_etc_shadow|Permissions are 640 (expected: 600)
+OK|xccdf_org.ssgproject.content_rule_file_permissions_etc_shells|Permissions on /etc/shells are acceptable (Current: 644, Max: 0644, no special bits).
+OK|xccdf_org.ssgproject.content_rule_file_permissions_grub2_cfg|Permissions correct (600)
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_home_directories|Some home directories have too-permissive or incorrect permissions: /home/fazil(drwxr-x---);
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_sshd_config|SSHD config file has insecure permissions (644). Group/Other must not have write access.
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_sshd_private_key|Non-compliant SSH private key files: /etc/ssh/ssh_host_ed25519_key(perms=600) /etc/ssh/ssh_host_ecdsa_key(perms=600) /etc/ssh/ssh_host_rsa_key(perms=600) 
+OK|xccdf_org.ssgproject.content_rule_file_permissions_sshd_pub_key|No SSH public key files have dangerous permissions
+OK|xccdf_org.ssgproject.content_rule_file_permissions_unauthorized_world_writable|No unauthorized world-writable files found
+OK|xccdf_org.ssgproject.content_rule_file_permissions_ungroupowned|No ungroupowned files detected
+OK|xccdf_org.ssgproject.content_rule_file_permissions_var_log_apt|All /var/log/apt files have correct permissions
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_var_log_auth|Incorrect permissions detected on /var/log/auth.log (mode: 640)
+OK|xccdf_org.ssgproject.content_rule_file_permissions_var_log_cloud-init|All cloud-init log file permissions are correct
+OK|xccdf_org.ssgproject.content_rule_file_permissions_var_log_gdm|No gdm log files found
+OK|xccdf_org.ssgproject.content_rule_file_permissions_var_log_gdm3|No gdm3 log files found
+OK|xccdf_org.ssgproject.content_rule_file_permissions_var_log_lastlog|All lastlog files comply with permission requirements
+OK|xccdf_org.ssgproject.content_rule_file_permissions_var_log_localmessages|No localmessages files found
+OK|xccdf_org.ssgproject.content_rule_file_permissions_var_log_messages|File not found: /var/log/messages
+OK|xccdf_org.ssgproject.content_rule_file_permissions_var_log_secure|File not found: /var/log/secure
+OK|xccdf_org.ssgproject.content_rule_file_permissions_var_log_sssd|Directory not found: /var/log/sssd
+OK|xccdf_org.ssgproject.content_rule_file_permissions_var_log_syslog|File permissions for /var/log/syslog are correct
+OK|xccdf_org.ssgproject.content_rule_file_permissions_var_log_waagent|No matching waagent.log files found
+WARN|xccdf_org.ssgproject.content_rule_file_permissions_var_log_wbtmp|Invalid other permissions on /var/log/wtmp
+SKIPPED|xccdf_org.ssgproject.content_rule_firewall_single_service_active|Skipped via config/skip-controls.conf
+OK|xccdf_org.ssgproject.content_rule_gid_passwd_group_same|All primary group IDs in /etc/passwd exist in /etc/group
+NOTAPPL|xccdf_org.ssgproject.content_rule_gnome_gdm_disable_xdmcp|gdm3 is not installed (control not applicable)
+OK|xccdf_org.ssgproject.content_rule_group_unique_id|All group IDs in /etc/group are unique
+OK|xccdf_org.ssgproject.content_rule_group_unique_name|All group names in /etc/group are unique
+OK|xccdf_org.ssgproject.content_rule_groups_no_zero_gid_except_root|Only 'root' group has GID 0
+WARN|xccdf_org.ssgproject.content_rule_grub2_enable_apparmor|GRUB_CMDLINE_LINUX is missing or empty
+SKIPPED|xccdf_org.ssgproject.content_rule_grub2_password|Skipped via config/skip-controls.conf
+SKIPPED|xccdf_org.ssgproject.content_rule_grub2_uefi_password|Skipped via config/skip-controls.conf
+OK|xccdf_org.ssgproject.content_rule_has_nonlocal_mta|Non-local MTA installed: postfix
+NOTAPPL|xccdf_org.ssgproject.content_rule_ip6tables_rules_for_open_ports|nftables installed (rule not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_iptables_rules_for_open_ports|nftables installed (rule not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_journald_compress|rsyslog service is active (journald-only logging not in use)
+NOTAPPL|xccdf_org.ssgproject.content_rule_journald_disable_forward_to_syslog|rsyslog service is active (journald not sole logger; control not applicable)
+WARN|xccdf_org.ssgproject.content_rule_journald_forward_to_syslog|ForwardToSyslog is not explicitly set to 'yes' in /etc/systemd/journald.conf while rsyslog is active
+NOTAPPL|xccdf_org.ssgproject.content_rule_journald_storage|rsyslog service is active (journald-only storage requirement not applicable)
+WARN|xccdf_org.ssgproject.content_rule_kernel_module_cramfs_disabled|cramfs install rule missing
+WARN|xccdf_org.ssgproject.content_rule_kernel_module_freevxfs_disabled|freevxfs install rule missing
+WARN|xccdf_org.ssgproject.content_rule_kernel_module_hfs_disabled|install rule missing for hfs
+WARN|xccdf_org.ssgproject.content_rule_kernel_module_hfsplus_disabled|install rule missing for hfsplus
+WARN|xccdf_org.ssgproject.content_rule_kernel_module_jffs2_disabled|install rule missing for jffs2
+WARN|xccdf_org.ssgproject.content_rule_kernel_module_usb-storage_disabled|install rule missing for usb-storage
+OK|xccdf_org.ssgproject.content_rule_logging_services_active|rsyslog.service is active
+OK|xccdf_org.ssgproject.content_rule_mount_option_dev_shm_nodev|nodev option is set for /dev/shm
+WARN|xccdf_org.ssgproject.content_rule_mount_option_dev_shm_noexec|noexec option missing for /dev/shm
+OK|xccdf_org.ssgproject.content_rule_mount_option_dev_shm_nosuid|nosuid option is set for /dev/shm
+WARN|xccdf_org.ssgproject.content_rule_mount_option_home_nodev|/home is not a mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_home_nosuid|/home is not a mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_tmp_nodev|/tmp is not a mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_tmp_noexec|/tmp is not a mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_tmp_nosuid|/tmp is not a mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_nodev|/var/log/audit is not a mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_noexec|/var/log/audit is not a mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_nosuid|/var/log/audit is not a mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_var_log_nodev|/var/log is not a separate mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_var_log_noexec|/var/log is not a separate mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_var_log_nosuid|/var/log is not a separate mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_var_nodev|/var is not a separate mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_var_nosuid|/var is not a separate mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_var_tmp_nodev|/var/tmp is not a separate mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_var_tmp_noexec|/var/tmp is not a separate mount point
+WARN|xccdf_org.ssgproject.content_rule_mount_option_var_tmp_nosuid|/var/tmp is not a separate mount point
+SKIPPED|xccdf_org.ssgproject.content_rule_nftables_ensure_default_deny_policy|Skipped via config/skip-controls.conf
+WARN|xccdf_org.ssgproject.content_rule_nftables_rules_permanent|Permanent rules file '/etc/inet-filter.rules' does not exist
+SKIPPED|xccdf_org.ssgproject.content_rule_no_dirs_unowned_by_root|Skipped via config/skip-controls.conf
+OK|xccdf_org.ssgproject.content_rule_no_empty_passwords_etc_shadow|All accounts in /etc/shadow have a password hash set (no empty passwords)
+WARN|xccdf_org.ssgproject.content_rule_no_empty_passwords_unix|pam_unix is configured with 'nullok' in /usr/share/pam-configs/unix (allows null passwords)
+OK|xccdf_org.ssgproject.content_rule_no_files_unowned_by_user|No unowned-by-user files detected
+OK|xccdf_org.ssgproject.content_rule_no_forward_files|No .forward files present in local user home directories
+OK|xccdf_org.ssgproject.content_rule_no_invalid_shell_accounts_unlocked|No unlocked accounts with invalid shells found
+OK|xccdf_org.ssgproject.content_rule_no_netrc_files|No .netrc files present in local user home directories
+NOTAPPL|xccdf_org.ssgproject.content_rule_no_rsh_trust_files|'rsh-server' package is not installed.
+OK|xccdf_org.ssgproject.content_rule_no_shelllogin_for_systemaccounts|All system accounts (UID < 1000, except root) have non-login shells
+OK|xccdf_org.ssgproject.content_rule_ntp_single_service_active|systemd-timesyncd is active, all other NTP services disabled
+OK|xccdf_org.ssgproject.content_rule_package_aide_installed|AIDE package is installed
+WARN|xccdf_org.ssgproject.content_rule_package_apparmor-utils_installed|apparmor-utils package is not installed
+OK|xccdf_org.ssgproject.content_rule_package_apparmor_installed|apparmor package is installed
+OK|xccdf_org.ssgproject.content_rule_package_autofs_removed|Package autofs is not installed
+OK|xccdf_org.ssgproject.content_rule_package_avahi_removed|avahi-daemon package is removed
+OK|xccdf_org.ssgproject.content_rule_package_bind_removed|bind9 package is not installed
+NOTAPPL|xccdf_org.ssgproject.content_rule_package_chrony_installed|Time sync service is not chronyd
+OK|xccdf_org.ssgproject.content_rule_package_cron_installed|cron package installed
+OK|xccdf_org.ssgproject.content_rule_package_cups_removed|Package cups is not installed (Compliant).
+OK|xccdf_org.ssgproject.content_rule_package_dhcp_removed|isc-dhcp-server package is not installed
+OK|xccdf_org.ssgproject.content_rule_package_dnsmasq_removed|dnsmasq package is not installed
+OK|xccdf_org.ssgproject.content_rule_package_dovecot_removed|dovecot-core package is not installed
+WARN|xccdf_org.ssgproject.content_rule_package_ftp_removed|ftp package is installed and must be removed
+OK|xccdf_org.ssgproject.content_rule_package_httpd_removed|apache2 package is not installed
+WARN|xccdf_org.ssgproject.content_rule_package_inetutils-telnet_removed|Package inetutils-telnet is installed. Telnet uses unencrypted communication.
+WARN|xccdf_org.ssgproject.content_rule_package_iptables-persistent_installed|Package iptables-persistent is not installed. iptables rules may not persist across reboots.
+OK|xccdf_org.ssgproject.content_rule_package_iptables-persistent_removed|ufw is installed, and iptables-persistent package is removed.
+NOTAPPL|xccdf_org.ssgproject.content_rule_package_iptables_installed|Control is not applicable (nftables or ufw is active, or 'linux-base' is missing).
+OK|xccdf_org.ssgproject.content_rule_package_net-snmp_removed|Package snmpd is not installed (Compliant).
+OK|xccdf_org.ssgproject.content_rule_package_nfs-kernel-server_removed|nfs-kernel-server package is not installed
+NOTAPPL|xccdf_org.ssgproject.content_rule_package_nftables_installed|Another firewall (iptables or ufw) is active
+OK|xccdf_org.ssgproject.content_rule_package_nginx_removed|nginx package is not installed
+OK|xccdf_org.ssgproject.content_rule_package_nis_removed|nis package is not installed
+OK|xccdf_org.ssgproject.content_rule_package_openldap-clients_removed|ldap-utils package is not installed
+OK|xccdf_org.ssgproject.content_rule_package_openldap-servers_removed|slapd package is not installed
+OK|xccdf_org.ssgproject.content_rule_package_pam_modules_installed|libpam-modules package is installed
+WARN|xccdf_org.ssgproject.content_rule_package_pam_pwquality_installed|libpam-pwquality package is not installed while libpam-runtime is present
+OK|xccdf_org.ssgproject.content_rule_package_pam_runtime_installed|libpam-runtime package is installed
+OK|xccdf_org.ssgproject.content_rule_package_prelink_removed|Package 'prelink' is not installed
+OK|xccdf_org.ssgproject.content_rule_package_rpcbind_removed|rpcbind package is not installed
+OK|xccdf_org.ssgproject.content_rule_package_rsh_removed|Package rsh-client is not installed (Compliant).
+WARN|xccdf_org.ssgproject.content_rule_package_rsync_removed|Package rsync is installed.
+OK|xccdf_org.ssgproject.content_rule_package_rsyslog_installed|rsyslog package is installed
+OK|xccdf_org.ssgproject.content_rule_package_samba_removed|Package samba is not installed (Compliant).
+OK|xccdf_org.ssgproject.content_rule_package_squid_removed|Package squid is not installed (Compliant).
+OK|xccdf_org.ssgproject.content_rule_package_sudo_installed|sudo package is installed
+NOTAPPL|xccdf_org.ssgproject.content_rule_package_systemd-journal-remote_installed|rsyslog service is active (journald remote package not required)
+OK|xccdf_org.ssgproject.content_rule_package_talk_removed|Package talk is not installed (Compliant).
+WARN|xccdf_org.ssgproject.content_rule_package_telnet_removed|Package telnet is installed. Telnet uses unencrypted communication.
+OK|xccdf_org.ssgproject.content_rule_package_tftp-server_removed|Package tftpd-hpa is not installed (Compliant).
+OK|xccdf_org.ssgproject.content_rule_package_timesyncd_installed|systemd-timesyncd is installed
+WARN|xccdf_org.ssgproject.content_rule_package_tnftp_removed|tnftp package is installed and must be removed
+OK|xccdf_org.ssgproject.content_rule_package_ufw_installed|ufw package is installed
+WARN|xccdf_org.ssgproject.content_rule_package_ufw_removed|ufw package is installed.
+OK|xccdf_org.ssgproject.content_rule_package_vsftpd_removed|vsftpd package is not installed
+OK|xccdf_org.ssgproject.content_rule_package_xinetd_removed|Package xinetd is not installed (Compliant).
+OK|xccdf_org.ssgproject.content_rule_package_ypserv_removed|Package ypserv is not installed (Compliant).
+SKIPPED|xccdf_org.ssgproject.content_rule_partition_for_dev_shm|Skipped via config/skip-controls.conf
+SKIPPED|xccdf_org.ssgproject.content_rule_partition_for_tmp|Skipped via config/skip-controls.conf
+WARN|xccdf_org.ssgproject.content_rule_permissions_local_var_log|Found insecure log file permissions under /var/log
+WARN|xccdf_org.ssgproject.content_rule_postfix_network_listening_disabled|inet_interfaces is 'all' (expected loopback-only)
+SKIPPED|xccdf_org.ssgproject.content_rule_root_path_all_dirs|Skipped via config/skip-controls.conf
+OK|xccdf_org.ssgproject.content_rule_root_path_no_dot|PATH does not contain '.' or empty elements
+OK|xccdf_org.ssgproject.content_rule_rsyslog_filecreatemode|$FileCreateMode is set to 0640 for rsyslog log file creation (no conflicting directives found)
+OK|xccdf_org.ssgproject.content_rule_rsyslog_nolisten|rsyslog is not configured to listen on network interfaces (no active network input directives found).
+WARN|xccdf_org.ssgproject.content_rule_service_apport_disabled|apport.service is enabled
+WARN|xccdf_org.ssgproject.content_rule_service_autofs_disabled|autofs service is running
+OK|xccdf_org.ssgproject.content_rule_service_avahi-daemon_disabled|avahi-daemon package not installed, service cannot run
+WARN|xccdf_org.ssgproject.content_rule_service_bluetooth_disabled|bluetooth.service is not masked.
+WARN|xccdf_org.ssgproject.content_rule_service_chronyd_disabled|chrony.service is not disabled
+NOTAPPL|xccdf_org.ssgproject.content_rule_service_chronyd_enabled|chronyd not selected as timesync service
+OK|xccdf_org.ssgproject.content_rule_service_cron_enabled|cron service enabled and running
+OK|xccdf_org.ssgproject.content_rule_service_cups_disabled|Service cups.service unit file not found (Implied compliance if cups is not installed).
+OK|xccdf_org.ssgproject.content_rule_service_dhcpd6_disabled|Service isc-dhcp-server6.service not present
+OK|xccdf_org.ssgproject.content_rule_service_dhcpd_disabled|Service isc-dhcp-server.service not present
+OK|xccdf_org.ssgproject.content_rule_service_dnsmasq_disabled|dnsmasq.service not present
+OK|xccdf_org.ssgproject.content_rule_service_dovecot_disabled|dovecot.service not present
+OK|xccdf_org.ssgproject.content_rule_service_httpd_disabled|apache2.service not present
+OK|xccdf_org.ssgproject.content_rule_service_named_disabled|named.service not present
+OK|xccdf_org.ssgproject.content_rule_service_nfs_disabled|nfs-server.service not present
+WARN|xccdf_org.ssgproject.content_rule_service_nftables_disabled|nftables service is NOT disabled (enabled=disabled
+WARN|xccdf_org.ssgproject.content_rule_service_nftables_enabled|nftables service is neither enabled nor active.
+OK|xccdf_org.ssgproject.content_rule_service_nginx_disabled|nginx.service not present
+OK|xccdf_org.ssgproject.content_rule_service_rpcbind_disabled|rpcbind.service not present
+WARN|xccdf_org.ssgproject.content_rule_service_rsyncd_disabled|Service rsync.service is not masked (Current: disabled
+OK|xccdf_org.ssgproject.content_rule_service_rsyslog_enabled|rsyslog.service is enabled and running
+OK|xccdf_org.ssgproject.content_rule_service_slapd_disabled|slapd.service not present on system
+WARN|xccdf_org.ssgproject.content_rule_service_smb_disabled|Service smbd.service is not masked (Current: not-found
+NOTAPPL|xccdf_org.ssgproject.content_rule_service_snmpd_disabled|'snmp' package is not installed or platform check failed. No action required.
+NOTAPPL|xccdf_org.ssgproject.content_rule_service_squid_disabled|'squid' package is not installed or platform check failed. No action required.
+NOTAPPL|xccdf_org.ssgproject.content_rule_service_systemd-journal-upload_enabled|systemd-journal-remote package is not installed (remote journald upload not in use)
+WARN|xccdf_org.ssgproject.content_rule_service_systemd-journald_enabled|systemd-journald.service is not properly enabled/active (enabled: static, active: active)
+OK|xccdf_org.ssgproject.content_rule_service_tftp_disabled|Service tftpd-hpa.service unit file not found (Implied compliance if tftp package is not installed).
+WARN|xccdf_org.ssgproject.content_rule_service_timesyncd_configured|Missing preferred servers (expected 0.ubuntu.pool.ntp.org,1.ubuntu.pool.ntp.org, got ). Missing fallback servers (expected 2.ubuntu.pool.ntp.org,3.ubuntu.pool.ntp.org, got ). 
+NOTAPPL|xccdf_org.ssgproject.content_rule_service_timesyncd_disabled|systemd-timesyncd is selected (should remain enabled)
+OK|xccdf_org.ssgproject.content_rule_service_timesyncd_enabled|systemd-timesyncd.service is enabled and running
+NOTAPPL|xccdf_org.ssgproject.content_rule_service_ufw_enabled|Selected firewall is '', not ufw
+OK|xccdf_org.ssgproject.content_rule_service_vsftpd_disabled|vsftpd.service not present
+OK|xccdf_org.ssgproject.content_rule_service_xinetd_disabled|Service xinetd.service unit file not found (Implied compliance if package is not installed).
+OK|xccdf_org.ssgproject.content_rule_service_ypserv_disabled|Service ypserv.service unit file not found (Implied compliance if package is not installed).
+SKIPPED|xccdf_org.ssgproject.content_rule_set_ip6tables_default_rule|Skipped via config/skip-controls.conf
+NOTAPPL|xccdf_org.ssgproject.content_rule_set_iptables_default_rule|nftables installed (rule not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_set_ipv6_loopback_traffic|nftables is installed (rule not applicable)
+NOTAPPL|xccdf_org.ssgproject.content_rule_set_loopback_traffic|nftables installed (rule not applicable)
+WARN|xccdf_org.ssgproject.content_rule_set_nftables_base_chain|Table 'inet filter' does not exist.
+WARN|xccdf_org.ssgproject.content_rule_set_nftables_loopback_traffic|Missing: accept traffic on loopback interface
+WARN|xccdf_org.ssgproject.content_rule_set_nftables_table|Required nftables table 'inet filter' is missing.
+OK|xccdf_org.ssgproject.content_rule_set_password_hashing_algorithm_logindefs|Password hashing algorithm in /etc/login.defs is 'SHA512'
+OK|xccdf_org.ssgproject.content_rule_set_password_hashing_algorithm_systemauth|pam_unix.so in /etc/pam.d/common-password uses yescrypt as the password hashing algorithm
+NOTAPPL|xccdf_org.ssgproject.content_rule_set_ufw_default_rule|Firewall selection is ''
+NOTAPPL|xccdf_org.ssgproject.content_rule_set_ufw_loopback_traffic|ufw is not active. Loopback rules check is skipped.
+NOTAPPL|xccdf_org.ssgproject.content_rule_socket_systemd-journal-remote_disabled|systemd-journal-remote.socket not present on system
+OK|xccdf_org.ssgproject.content_rule_sshd_disable_empty_passwords|PermitEmptyPasswords is correctly set to no.
+OK|xccdf_org.ssgproject.content_rule_sshd_disable_rhosts|IgnoreRhosts is correctly set to yes.
+WARN|xccdf_org.ssgproject.content_rule_sshd_disable_root_login|PermitRootLogin is set to YES, expected no or a more secure setting.
+OK|xccdf_org.ssgproject.content_rule_sshd_do_not_permit_user_env|PermitUserEnvironment is correctly set to no.
+OK|xccdf_org.ssgproject.content_rule_sshd_enable_pam|UsePAM is correctly set to yes.
+WARN|xccdf_org.ssgproject.content_rule_sshd_enable_warning_banner_net|Banner is set to none, expected /etc/issue.net.
+SKIPPED|xccdf_org.ssgproject.content_rule_sshd_limit_user_access|Skipped via config/skip-controls.conf
+WARN|xccdf_org.ssgproject.content_rule_sshd_set_idle_timeout|ClientAliveInterval is set to 0 (disabled). Expected value 1 to 300.
+OK|xccdf_org.ssgproject.content_rule_sshd_set_keepalive|ClientAliveCountMax is set to 3, which is compliant (<= 3).
+WARN|xccdf_org.ssgproject.content_rule_sshd_set_login_grace_time|LoginGraceTime is set to 120 seconds, expected value is 60 or less.
+OK|xccdf_org.ssgproject.content_rule_sshd_set_loglevel_info|LogLevel is set to INFO, which meets or exceeds the required INFO level.
+WARN|xccdf_org.ssgproject.content_rule_sshd_set_max_auth_tries|MaxAuthTries is set to 6, expected value is 4 or less.
+OK|xccdf_org.ssgproject.content_rule_sshd_set_max_sessions|MaxSessions is set to 10, which is acceptable (<= 10).
+WARN|xccdf_org.ssgproject.content_rule_sshd_set_maxstartups|MaxStartups is set to 10:30:100, expected 10:30:60.
+OK|xccdf_org.ssgproject.content_rule_sshd_use_strong_ciphers|All configured SSH Ciphers are strong algorithms: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+OK|xccdf_org.ssgproject.content_rule_sshd_use_strong_kex|All configured SSH KEX algorithms are strong: sntrup761x25519-sha512@openssh.com,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256
+WARN|xccdf_org.ssgproject.content_rule_sshd_use_strong_macs|Non-compliant MACs found in configuration: umac-64-etm@openssh.com umac-128-etm@openssh.com hmac-sha1-etm@openssh.com umac-64@openssh.com umac-128@openssh.com hmac-sha1
+OK|xccdf_org.ssgproject.content_rule_sudo_add_use_pty|Defaults use_pty is configured in sudoers
+WARN|xccdf_org.ssgproject.content_rule_sudo_custom_logfile|sudoers does not configure the logfile option (Defaults logfile=...)
+OK|xccdf_org.ssgproject.content_rule_sudo_remove_no_authenticate|No active sudoers entries using !authenticate were found
+WARN|xccdf_org.ssgproject.content_rule_sudo_require_reauthentication|timestamp_timeout is not configured in /etc/sudoers (expected Defaults timestamp_timeout=15)
+WARN|xccdf_org.ssgproject.content_rule_sysctl_fs_suid_dumpable|Runtime sysctl fs.suid_dumpable != 0
+WARN|xccdf_org.ssgproject.content_rule_sysctl_kernel_randomize_va_space|kernel.randomize_va_space not configured
+OK|xccdf_org.ssgproject.content_rule_sysctl_kernel_yama_ptrace_scope|kernel.yama.ptrace_scope is correctly set to 1
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_accept_redirects|Runtime value is 1 (expected 0)
+OK|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_accept_source_route|Runtime and persistent configuration values are both 0 (or not explicitly overridden).
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_log_martians|Runtime value is 0 (expected 1)
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_rp_filter|Runtime value is 2, expected 1 (Strict Reverse Path Filtering).
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_secure_redirects|Runtime value is 1 (expected 0)
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_send_redirects|Runtime value is 1, expected 0.
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_accept_redirects|Runtime value is 1, expected 0.
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_accept_source_route|Runtime value is 1 (expected 0)
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_log_martians|Runtime value is 0, expected 1.
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_rp_filter|Runtime value is 2 (expected 1)
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_secure_redirects|Runtime value is 1, expected 0.
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_send_redirects|Runtime value is 1 (expected 0)
+OK|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_icmp_echo_ignore_broadcasts|net.ipv4.icmp_echo_ignore_broadcasts is correctly set to 1
+OK|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_icmp_ignore_bogus_error_responses|Runtime and persistent configuration values are both 1 (or not explicitly overridden).
+OK|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_ip_forward|Runtime and persistent configuration values are both 0 (or not explicitly overridden).
+OK|xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_tcp_syncookies|net.ipv4.tcp_syncookies correctly set to 1
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_accept_ra|Runtime value is 1, expected 0
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_accept_redirects|Runtime value is 1, expected 0
+OK|xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_accept_source_route|net.ipv6.conf.all.accept_source_route is correctly set to 0
+OK|xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_forwarding|net.ipv6.conf.all.forwarding is correctly set to 0
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_ra|Runtime value is 1 (expected 0)
+WARN|xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_redirects|Runtime value = 1 (expected 0)
+OK|xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_source_route|Runtime value is correct (0), and no persistent configuration overrides it.
+NOTAPPL|xccdf_org.ssgproject.content_rule_systemd_journal_upload_server_tls|rsyslog aktivdir, systemd-journal-upload-a ehtiyac yoxdur.
+NOTAPPL|xccdf_org.ssgproject.content_rule_systemd_journal_upload_url|rsyslog is active, journal-upload control is not applicable
+NOTAPPL|xccdf_org.ssgproject.content_rule_ufw_rules_for_open_ports|Firewall '' selected
+WARN|xccdf_org.ssgproject.content_rule_use_pam_wheel_group_for_su|pam_wheel.so line for su is missing or not using use_uid group=sugroup
+OK|xccdf_org.ssgproject.content_rule_wireless_disable_interfaces|No wireless interfaces detected

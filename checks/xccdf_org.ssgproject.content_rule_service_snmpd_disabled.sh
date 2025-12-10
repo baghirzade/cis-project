@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+RULE_ID="xccdf_org.ssgproject.content_rule_service_snmpd_disabled"
+TITLE="Ensure SNMP service is disabled and masked"
+
+run() {
+    # Check platform applicability: Check if 'snmp' package is installed and if linux-base is present (Debian/Ubuntu)
+    if ! ( dpkg-query --show --showformat='${db:Status-Status}' 'snmp' 2>/dev/null | grep -q '^installed$' && dpkg-query --show --showformat='${db:Status-Status}' 'linux-base' 2>/dev/null | grep -q '^installed$' ); then
+        echo "NOTAPPL|$RULE_ID|'snmp' package is not installed or platform check failed. No action required."
+        return 0
+    fi
+    
+    SYSTEMCTL_EXEC='/usr/bin/systemctl'
+    SERVICE_NAME='snmpd.service'
+    
+    if ! command -v "$SYSTEMCTL_EXEC" &> /dev/null; then
+        echo "FAIL|$RULE_ID|systemctl command not found. Cannot determine service status."
+        return 1
+    fi
+    
+    # 1. Check if the service is masked (highest level of disablement)
+    IS_MASKED=$("$SYSTEMCTL_EXEC" is-enabled "$SERVICE_NAME" 2>/dev/null)
+    
+    if [ "$IS_MASKED" = "masked" ]; then
+        echo "[+] Service $SERVICE_NAME is masked (Compliant)."
+    else
+        echo "FAIL|$RULE_ID|Service $SERVICE_NAME is not masked (Current: $IS_MASKED). Must be 'masked'."
+        return 1
+    fi
+
+    # 2. Check if the service is inactive (not running)
+    IS_INACTIVE=$("$SYSTEMCTL_EXEC" is-active "$SERVICE_NAME" 2>/dev/null)
+
+    # If it's masked, it should be inactive, but we check to be thorough.
+    if [ "$IS_INACTIVE" = "inactive" ] || [ "$IS_INACTIVE" = "unknown" ]; then
+        echo "[+] Service $SERVICE_NAME is inactive (Compliant)."
+        return 0
+    else
+        echo "FAIL|$RULE_ID|Service $SERVICE_NAME is running or failed (Current: $IS_INACTIVE). Must be 'inactive'."
+        return 1
+    fi
+}
+
+if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+    run
+fi

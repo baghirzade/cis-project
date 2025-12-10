@@ -1,0 +1,815 @@
+[RUN] xccdf_org.ssgproject.content_rule_account_disable_post_pw_expiration
+Remediating: xccdf_org.ssgproject.content_rule_account_disable_post_pw_expiration
+[RUN] xccdf_org.ssgproject.content_rule_accounts_maximum_age_login_defs
+Remediating: xccdf_org.ssgproject.content_rule_accounts_maximum_age_login_defs
+[RUN] xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_enabled
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_enabled (ensure pam_pwhistory is enabled)
+Remediating rule 38/405: 'xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_enabled'
+[RUN] xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_enforce_root
+Remediating rule 39/405: 'xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_enforce_root'
+[RUN] xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_remember
+Remediating: xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_remember
+[RUN] xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_use_authtok
+Remediating: xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_use_authtok
+[RUN] xccdf_org.ssgproject.content_rule_accounts_password_pam_pwquality_enabled
+Remediating: xccdf_org.ssgproject.content_rule_accounts_password_pam_pwquality_enabled
+[RUN] xccdf_org.ssgproject.content_rule_accounts_password_pam_unix_authtok
+Remediating: xccdf_org.ssgproject.content_rule_accounts_password_pam_unix_authtok
+PAM configuration
+-----------------
+
+Incompatible PAM profiles selected.
+
+The following PAM profiles cannot be used together:
+
+Unix authentication, Unix authentication
+
+Please select a different set of modules to enable.
+
+[RUN] xccdf_org.ssgproject.content_rule_accounts_password_set_max_life_existing
+Remediating: xccdf_org.ssgproject.content_rule_accounts_password_set_max_life_existing
+Set max password age (365 days) for user: root
+Set max password age (365 days) for user: fazil
+[RUN] xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_deny
+Remediating: xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_deny
+PAM configuration
+-----------------
+
+Incompatible PAM profiles selected.
+
+The following PAM profiles cannot be used together:
+
+Unix authentication, Unix authentication
+
+Please select a different set of modules to enable.
+
+[RUN] xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_enabled
+Remediating: xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_enabled
+[RUN] xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_unlock_time
+Remediating: xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_unlock_time
+[RUN] xccdf_org.ssgproject.content_rule_accounts_set_post_pw_existing
+Remediating: xccdf_org.ssgproject.content_rule_accounts_set_post_pw_existing
+[RUN] xccdf_org.ssgproject.content_rule_accounts_tmout
+[RUN] xccdf_org.ssgproject.content_rule_accounts_umask_etc_bashrc
+Remediation applied: set umask 027 in /etc/bash.bashrc
+[RUN] xccdf_org.ssgproject.content_rule_accounts_umask_etc_login_defs
+Remediation applied: UMASK set to 027 in /etc/login.defs
+[RUN] xccdf_org.ssgproject.content_rule_accounts_umask_etc_profile
+Remediation applied: umask set to 027 in /etc/profile and /etc/profile.d scripts (where present).
+[RUN] xccdf_org.ssgproject.content_rule_accounts_umask_root
+Remediation applied: root umask set to 0027 in /root/.bashrc and /root/.profile (where present).
+[RUN] xccdf_org.ssgproject.content_rule_banner_etc_issue_cis
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_banner_etc_issue_cis (configure CIS-compliant /etc/issue banner)
+[*] Backing up existing /etc/issue to /etc/issue.bak_cis_banner
+[*] Writing CIS-compliant banner to /etc/issue
+[+] Remediation complete: /etc/issue now contains the CIS-compliant banner.
+[RUN] xccdf_org.ssgproject.content_rule_banner_etc_issue_net_cis
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_banner_etc_issue_net_cis (configure CIS-compliant /etc/issue.net banner)
+[*] Backing up existing /etc/issue.net to /etc/issue.net.bak_cis_banner
+[*] Writing CIS-compliant banner to /etc/issue.net
+[+] Remediation complete: /etc/issue.net now contains the CIS-compliant banner.
+[RUN] xccdf_org.ssgproject.content_rule_banner_etc_motd_cis
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_banner_etc_motd_cis (configure CIS-compliant /etc/motd banner)
+[*] Writing CIS-compliant banner to /etc/motd
+[+] Remediation complete: /etc/motd now contains the CIS-compliant banner.
+[RUN] xccdf_org.ssgproject.content_rule_chronyd_configure_pool_and_server
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_chronyd_configure_pool_and_server
+[*] Ensuring chrony.conf contains required server entries...
+grep: /etc/chrony/chrony.conf: No such file or directory
+/home/fazil/ubuntu-cis-automation/remediation/xccdf_org.ssgproject.content_rule_chronyd_configure_pool_and_server.sh: line 39: /etc/chrony/chrony.conf: No such file or directory
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_chronyd_configure_pool_and_server
+[RUN] xccdf_org.ssgproject.content_rule_chronyd_run_as_chrony_user
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_chronyd_run_as_chrony_user
+touch: cannot touch '/etc/chrony/chrony.conf': No such file or directory
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_chronyd_run_as_chrony_user
+[RUN] xccdf_org.ssgproject.content_rule_disable_users_coredumps
+[*] Remediating: xccdf_org.ssgproject.content_rule_disable_users_coredumps
+[+] Added '* hard core 0' to /etc/security/limits.d/10-ssg-hardening.conf
+[+] Remediation completed: xccdf_org.ssgproject.content_rule_disable_users_coredumps
+[RUN] xccdf_org.ssgproject.content_rule_ensure_pam_wheel_group_empty
+[RUN] xccdf_org.ssgproject.content_rule_file_at_allow_exists
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_at_allow_exists
+[*] Ensuring /etc/at.allow exists...
+[*] Setting correct owner...
+[*] Setting correct permissions...
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_at_allow_exists
+[RUN] xccdf_org.ssgproject.content_rule_file_cron_allow_exists
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_cron_allow_exists
+[*] Ensuring /etc/cron.allow exists...
+[*] Setting correct owner...
+[*] Setting correct permissions...
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_cron_allow_exists
+[RUN] xccdf_org.ssgproject.content_rule_file_groupowner_at_allow
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_groupowner_at_allow
+[*] Setting group owner of /etc/at.allow to 0...
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_groupowner_at_allow
+[RUN] xccdf_org.ssgproject.content_rule_file_groupowner_at_deny
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_groupowner_at_deny
+[!] /etc/at.deny does not exist — creating it.
+[*] Setting group owner of /etc/at.deny to 0...
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_groupowner_at_deny
+[RUN] xccdf_org.ssgproject.content_rule_file_groupowner_cron_allow
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_groupowner_cron_allow
+[*] Setting group owner of /etc/cron.allow to 'crontab'...
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_groupowner_cron_allow
+[RUN] xccdf_org.ssgproject.content_rule_file_groupowner_etc_motd
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_file_groupowner_etc_motd (ensure /etc/motd is group-owned by GID 0)
+[i] /etc/motd is already group-owned by GID 0 (root). Nothing to do.
+[RUN] xccdf_org.ssgproject.content_rule_file_owner_at_allow
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_owner_at_allow
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_owner_at_allow
+[RUN] xccdf_org.ssgproject.content_rule_file_owner_at_deny
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_owner_at_deny
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_owner_at_deny
+[RUN] xccdf_org.ssgproject.content_rule_file_owner_cron_allow
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_owner_cron_allow
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_owner_cron_allow
+[RUN] xccdf_org.ssgproject.content_rule_file_owner_etc_motd
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_file_owner_etc_motd (ensure /etc/motd is owned by UID 0)
+[i] /etc/motd is already owned by UID 0 (root). Nothing to do.
+[RUN] xccdf_org.ssgproject.content_rule_file_ownerships_var_log
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_file_ownerships_var_log
+[*] Fixing ownership: /var/log/aide/aide.log → root
+[*] Fixing ownership: /var/log/aide/aide.log.0 → root
+[*] Fixing ownership: /var/log/aide/aideinit.log → root
+[*] Fixing ownership: /var/log/aide/aide.log.5.gz → root
+[*] Fixing ownership: /var/log/aide/aide.log.4.gz → root
+[*] Fixing ownership: /var/log/aide/aide.log.1.gz → root
+[*] Fixing ownership: /var/log/aide/aide.log.2.gz → root
+[*] Fixing ownership: /var/log/aide/aide.log.6.gz → root
+[*] Fixing ownership: /var/log/aide/aide.log.3.gz → root
+[*] Fixing ownership: /var/log/aide/aideinit.errors → root
+[+] Remediation complete for rule: xccdf_org.ssgproject.content_rule_file_ownerships_var_log
+[RUN] xccdf_org.ssgproject.content_rule_file_permission_user_init_files
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_at_allow
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_permissions_at_allow
+[*] Applying correct permissions (0640) to /etc/at.allow...
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_permissions_at_allow
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_at_deny
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_permissions_at_deny
+[*] Applying correct permissions (0640) to /etc/at.deny...
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_permissions_at_deny
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_backup_etc_gshadow
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_file_permissions_backup_etc_gshadow
+[*] Setting permissions of /etc/gshadow- to 600
+[+] Remediation complete
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_backup_etc_shadow
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_file_permissions_backup_etc_shadow
+[*] Setting permissions of /etc/shadow- to 600
+[+] Remediation complete
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_cron_allow
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_permissions_cron_allow
+[*] Applying correct permissions (0600) to /etc/cron.allow...
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_permissions_cron_allow
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_cron_d
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_permissions_cron_d
+[*] Fixing permissions on /etc/cron.d…
+[+] Permissions corrected for /etc/cron.d
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_permissions_cron_d
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_cron_daily
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_permissions_cron_daily
+[*] Fixing permissions on /etc/cron.daily…
+[+] Permissions corrected for /etc/cron.daily
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_permissions_cron_daily
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_cron_hourly
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_permissions_cron_hourly
+[*] Fixing permissions on /etc/cron.hourly…
+[+] Permissions corrected for /etc/cron.hourly
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_permissions_cron_hourly
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_cron_monthly
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_permissions_cron_monthly
+[*] Fixing permissions on /etc/cron.monthly…
+[+] Permissions corrected for /etc/cron.monthly
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_permissions_cron_monthly
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_cron_weekly
+[*] Remediating: xccdf_org.ssgproject.content_rule_file_permissions_cron_weekly
+[*] Fixing permissions on /etc/cron.weekly …
+[+] Permissions corrected for /etc/cron.weekly
+[+] Remediation complete for xccdf_org.ssgproject.content_rule_file_permissions_cron_weekly
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_etc_gshadow
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_file_permissions_etc_gshadow
+[*] Setting permissions of /etc/gshadow to 600
+[+] Remediation complete
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_etc_motd
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_file_permissions_etc_motd (set secure permissions on /etc/motd)
+[*] Current permissions on /etc/motd: 644
+[*] Setting permissions on /etc/motd to 0644 (owner rw, group/others r)
+[+] Remediation complete: permissions on /etc/motd are now 644
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_etc_shadow
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_file_permissions_etc_shadow
+[*] Setting permissions of /etc/shadow to 600
+[+] Remediation complete
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_home_directories
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_sshd_config
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_file_permissions_sshd_config (Secure SSHD configuration file permissions)
+    -> Setting permissions for /etc/ssh/sshd_config: u-xs,g-xwrs,o-xwrt (Removes setuid/setgid/sticky and all group/other write access).
+[+] Remediation complete. SSHD configuration file permissions secured.
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_sshd_private_key
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_file_permissions_sshd_private_key (Secure SSHD Private Key Files)
+    -> Iterating through SSH private key files in /etc/ssh/ to check ownership and set permissions.
+    -> Securing permissions for key file: /etc/ssh/ssh_host_ecdsa_key
+    -> Securing permissions for key file: /etc/ssh/ssh_host_ed25519_key
+    -> Securing permissions for key file: /etc/ssh/ssh_host_rsa_key
+[+] Remediation complete. SSHD private key file permissions secured.
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_var_log_auth
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_file_permissions_var_log_auth
+[*] Fixing permissions on /var/log/auth.log
+[+] Remediation complete for rule: xccdf_org.ssgproject.content_rule_file_permissions_var_log_auth
+[RUN] xccdf_org.ssgproject.content_rule_file_permissions_var_log_wbtmp
+[*] Applying remediation for: $RULE_ID
+[+] Permissions corrected on: /var/log/btmp
+[+] Permissions corrected on: /var/log/wtmp
+[+] Permissions corrected on: /var/log/btmp.1
+[+] Remediation complete for: $RULE_ID
+[RUN] xccdf_org.ssgproject.content_rule_grub2_enable_apparmor
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/50-cloudimg-settings.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-6.8.0-88-generic
+Found initrd image: /boot/initrd.img-6.8.0-88-generic
+Found linux image: /boot/vmlinuz-6.8.0-44-generic
+Found initrd image: /boot/initrd.img-6.8.0-44-generic
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Remediation for xccdf_org.ssgproject.content_rule_grub2_enable_apparmor completed.
+[RUN] xccdf_org.ssgproject.content_rule_journald_forward_to_syslog
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_journald_forward_to_syslog (ensure ForwardToSyslog=yes when rsyslog is active)
+[*] linux-base installed and rsyslog active; enforcing ForwardToSyslog=yes in /etc/systemd/journald.conf
+[+] Remediation complete: ForwardToSyslog=yes is configured in /etc/systemd/journald.conf while rsyslog is active.
+[RUN] xccdf_org.ssgproject.content_rule_kernel_module_cramfs_disabled
+[*] Remediating: xccdf_org.ssgproject.content_rule_kernel_module_cramfs_disabled
+[+] cramfs kernel module disabled
+[+] Remediation complete for: xccdf_org.ssgproject.content_rule_kernel_module_cramfs_disabled
+[RUN] xccdf_org.ssgproject.content_rule_kernel_module_freevxfs_disabled
+[*] Remediating: xccdf_org.ssgproject.content_rule_kernel_module_freevxfs_disabled
+[+] freevxfs kernel module disabled
+[+] Remediation complete for: xccdf_org.ssgproject.content_rule_kernel_module_freevxfs_disabled
+[RUN] xccdf_org.ssgproject.content_rule_kernel_module_hfs_disabled
+[*] Remediating: xccdf_org.ssgproject.content_rule_kernel_module_hfs_disabled
+[+] hfs kernel module disabled successfully
+[+] Remediation complete for: xccdf_org.ssgproject.content_rule_kernel_module_hfs_disabled
+[RUN] xccdf_org.ssgproject.content_rule_kernel_module_hfsplus_disabled
+[*] Remediating: xccdf_org.ssgproject.content_rule_kernel_module_hfsplus_disabled
+[+] hfsplus kernel module disabled successfully
+[+] Remediation complete for: xccdf_org.ssgproject.content_rule_kernel_module_hfsplus_disabled
+[RUN] xccdf_org.ssgproject.content_rule_kernel_module_jffs2_disabled
+[*] Remediating: xccdf_org.ssgproject.content_rule_kernel_module_jffs2_disabled
+[+] jffs2 kernel module disabled successfully
+[+] Remediation complete for: xccdf_org.ssgproject.content_rule_kernel_module_jffs2_disabled
+[RUN] xccdf_org.ssgproject.content_rule_kernel_module_usb-storage_disabled
+[*] Remediating: xccdf_org.ssgproject.content_rule_kernel_module_usb-storage_disabled
+[+] usb-storage kernel module successfully disabled
+[+] Remediation complete for: xccdf_org.ssgproject.content_rule_kernel_module_usb-storage_disabled
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_dev_shm_noexec
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_dev_shm_noexec
+[+] Remediation complete for: xccdf_org.ssgproject.content_rule_mount_option_dev_shm_noexec
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_home_nodev
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_home_nodev
+[-] /home is not listed in /etc/fstab. Cannot remediate automatically.
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_home_nodev
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_home_nosuid
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_home_nosuid
+[-] /home is not listed in /etc/fstab. Cannot remediate.
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_home_nosuid
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_tmp_nodev
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_tmp_nodev
+[-] /tmp is not listed in /etc/fstab — cannot remediate automatically.
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_tmp_nodev
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_tmp_noexec
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_tmp_noexec
+[-] /tmp is not listed in /etc/fstab — cannot remediate automatically.
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_tmp_noexec
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_tmp_nosuid
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_tmp_nosuid
+[-] /tmp entry not found in /etc/fstab → cannot remediate automatically
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_tmp_nosuid
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_nodev
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_nodev
+[-] /var/log/audit is not present in /etc/fstab → cannot remediate automatically
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_nodev
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_noexec
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_noexec
+[-] /var/log/audit is not present in /etc/fstab → cannot remediate automatically
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_noexec
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_nosuid
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_nosuid
+[-] /var/log/audit is not present in /etc/fstab → cannot remediate automatically
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_nosuid
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_var_log_nodev
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_var_log_nodev
+[-] /var/log entry not found in /etc/fstab → cannot remediate
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_var_log_nodev
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_var_log_noexec
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_var_log_noexec
+[-] /var/log not found in /etc/fstab → cannot remediate
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_var_log_noexec
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_var_log_nosuid
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_var_log_nosuid
+[-] /var/log missing from /etc/fstab → cannot remediate
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_var_log_nosuid
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_var_nodev
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_var_nodev
+[-] /var not present in /etc/fstab → cannot safely apply mount options.
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_var_nodev
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_var_nosuid
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_var_nosuid
+[-] /var not present in /etc/fstab → cannot safely apply mount options.
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_var_nosuid
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_var_tmp_nodev
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_var_tmp_nodev
+[-] /var/tmp missing in /etc/fstab → cannot safely remediate.
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_var_tmp_nodev
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_var_tmp_noexec
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_var_tmp_noexec
+[-] /var/tmp missing in /etc/fstab → cannot safely remediate.
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_var_tmp_noexec
+[RUN] xccdf_org.ssgproject.content_rule_mount_option_var_tmp_nosuid
+[*] Remediating: xccdf_org.ssgproject.content_rule_mount_option_var_tmp_nosuid
+[-] /var/tmp is not defined in /etc/fstab → cannot remediate.
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_mount_option_var_tmp_nosuid
+[RUN] xccdf_org.ssgproject.content_rule_nftables_rules_permanent
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_nftables_rules_permanent
+[*] Exporting current nftables ruleset into /etc/inet-filter.rules
+[*] Adding include directive to /etc/nftables.conf
+[+] Remediation complete: nftables permanent rules configured
+[RUN] xccdf_org.ssgproject.content_rule_no_empty_passwords_unix
+[RUN] xccdf_org.ssgproject.content_rule_package_apparmor-utils_installed
+Installing 'apparmor-utils' package...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  apparmor libapparmor1 python3-apparmor python3-libapparmor
+Suggested packages:
+  apparmor-profiles-extra vim-addon-manager
+The following NEW packages will be installed:
+  apparmor-utils python3-apparmor python3-libapparmor
+The following packages will be upgraded:
+  apparmor libapparmor1
+2 upgraded, 3 newly installed, 0 to remove and 9 not upgraded.
+Need to get 850 kB of archives.
+After this operation, 1049 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libapparmor1 amd64 4.0.1really4.0.1-0ubuntu0.24.04.5 [50.5 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 apparmor amd64 4.0.1really4.0.1-0ubuntu0.24.04.5 [638 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-libapparmor amd64 4.0.1really4.0.1-0ubuntu0.24.04.5 [30.1 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-apparmor all 4.0.1really4.0.1-0ubuntu0.24.04.5 [84.5 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 apparmor-utils all 4.0.1really4.0.1-0ubuntu0.24.04.5 [46.6 kB]
+Preconfiguring packages ...
+Fetched 850 kB in 1s (978 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 106920 files and directories currently installed.)
+Preparing to unpack .../libapparmor1_4.0.1really4.0.1-0ubuntu0.24.04.5_amd64.deb ...
+Unpacking libapparmor1:amd64 (4.0.1really4.0.1-0ubuntu0.24.04.5) over (4.0.1really4.0.1-0ubuntu0.24.04.4) ...
+Preparing to unpack .../apparmor_4.0.1really4.0.1-0ubuntu0.24.04.5_amd64.deb ...
+Unpacking apparmor (4.0.1really4.0.1-0ubuntu0.24.04.5) over (4.0.1really4.0.1-0ubuntu0.24.04.4) ...
+Selecting previously unselected package python3-libapparmor.
+Preparing to unpack .../python3-libapparmor_4.0.1really4.0.1-0ubuntu0.24.04.5_amd64.deb ...
+Unpacking python3-libapparmor (4.0.1really4.0.1-0ubuntu0.24.04.5) ...
+Selecting previously unselected package python3-apparmor.
+Preparing to unpack .../python3-apparmor_4.0.1really4.0.1-0ubuntu0.24.04.5_all.deb ...
+Unpacking python3-apparmor (4.0.1really4.0.1-0ubuntu0.24.04.5) ...
+Selecting previously unselected package apparmor-utils.
+Preparing to unpack .../apparmor-utils_4.0.1really4.0.1-0ubuntu0.24.04.5_all.deb ...
+Unpacking apparmor-utils (4.0.1really4.0.1-0ubuntu0.24.04.5) ...
+Setting up libapparmor1:amd64 (4.0.1really4.0.1-0ubuntu0.24.04.5) ...
+Setting up apparmor (4.0.1really4.0.1-0ubuntu0.24.04.5) ...
+Installing new version of config file /etc/apparmor.d/abstractions/dri-enumerate ...
+Installing new version of config file /etc/apparmor.d/abstractions/mesa ...
+Installing new version of config file /etc/apparmor.d/abstractions/opencl-intel ...
+Installing new version of config file /etc/apparmor.d/abstractions/opencl-nvidia ...
+Installing new version of config file /etc/apparmor.d/abstractions/opencl-pocl ...
+Installing new version of config file /etc/apparmor.d/abstractions/video ...
+Installing new version of config file /etc/apparmor.d/abstractions/vulkan ...
+Installing new version of config file /etc/apparmor.d/nvidia_modprobe ...
+Installing new version of config file /etc/apparmor.d/tunables/global ...
+Reloading AppArmor profiles 
+Setting up python3-libapparmor (4.0.1really4.0.1-0ubuntu0.24.04.5) ...
+Setting up python3-apparmor (4.0.1really4.0.1-0ubuntu0.24.04.5) ...
+Setting up apparmor-utils (4.0.1really4.0.1-0ubuntu0.24.04.5) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+
+Pending kernel upgrade!
+Running kernel version:
+  6.8.0-44-generic
+Diagnostics:
+  The currently running kernel version is not the expected kernel version 6.8.0-88-generic.
+
+Restarting the system to load the new kernel will not be handled automatically, so you should consider rebooting.
+
+Restarting services...
+ /etc/needrestart/restart.d/systemd-manager
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ fazil @ user manager service: systemd[59196]
+ root @ session #1: login[888]
+ root @ user manager service: systemd[1443]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Remediation successful: 'apparmor-utils' is installed.
+[RUN] xccdf_org.ssgproject.content_rule_package_ftp_removed
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_package_ftp_removed (remove ftp package)
+[!] WARNING: This action will remove 'ftp' and potentially dependent packages.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages will be REMOVED:
+  ftp
+0 upgraded, 0 newly installed, 1 to remove and 9 not upgraded.
+After this operation, 24.6 kB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107024 files and directories currently installed.)
+Removing ftp (20230507-2build3) ...
+[+] Remediation complete: ftp removed (if installed).
+[RUN] xccdf_org.ssgproject.content_rule_package_inetutils-telnet_removed
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_package_inetutils-telnet_removed (Remove inetutils-telnet package)
+    -> Package inetutils-telnet is installed. Removing it now.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages will be REMOVED:
+  inetutils-telnet* telnet*
+0 upgraded, 0 newly installed, 2 to remove and 9 not upgraded.
+After this operation, 295 kB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107021 files and directories currently installed.)
+Removing telnet (0.17+2.5-3ubuntu4) ...
+Removing inetutils-telnet (2:2.5-3ubuntu4) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+[+] Remediation complete. Package inetutils-telnet removed.
+[RUN] xccdf_org.ssgproject.content_rule_package_iptables-persistent_installed
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_package_iptables-persistent_installed (Install iptables-persistent)
+[*] Current filtering service variable is set to: nftables
+[!] Remediation condition not met: var_network_filtering_service is set to 'nftables', not 'iptables'. Skipping installation.
+[RUN] xccdf_org.ssgproject.content_rule_package_pam_pwquality_installed
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_package_pam_pwquality_installed (ensure libpam-pwquality is installed)
+Remediating rule 35/405: 'xccdf_org.ssgproject.content_rule_package_pam_pwquality_installed'
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  cracklib-runtime libcrack2 libpwquality-common libpwquality1 wamerican
+The following NEW packages will be installed:
+  cracklib-runtime libcrack2 libpam-pwquality libpwquality-common
+  libpwquality1 wamerican
+0 upgraded, 6 newly installed, 0 to remove and 9 not upgraded.
+Need to get 446 kB of archives.
+After this operation, 1932 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 libcrack2 amd64 2.9.6-5.1build2 [29.0 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 cracklib-runtime amd64 2.9.6-5.1build2 [147 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libpwquality-common all 1.4.5-3build1 [7748 B]
+Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libpwquality1 amd64 1.4.5-3build1 [13.5 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 libpam-pwquality amd64 1.4.5-3build1 [11.7 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 wamerican all 2020.12.07-2 [236 kB]
+Preconfiguring packages ...
+Fetched 446 kB in 1s (611 kB/s)
+Selecting previously unselected package libcrack2:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107007 files and directories currently installed.)
+Preparing to unpack .../0-libcrack2_2.9.6-5.1build2_amd64.deb ...
+Unpacking libcrack2:amd64 (2.9.6-5.1build2) ...
+Selecting previously unselected package cracklib-runtime.
+Preparing to unpack .../1-cracklib-runtime_2.9.6-5.1build2_amd64.deb ...
+Unpacking cracklib-runtime (2.9.6-5.1build2) ...
+Selecting previously unselected package libpwquality-common.
+Preparing to unpack .../2-libpwquality-common_1.4.5-3build1_all.deb ...
+Unpacking libpwquality-common (1.4.5-3build1) ...
+Selecting previously unselected package libpwquality1:amd64.
+Preparing to unpack .../3-libpwquality1_1.4.5-3build1_amd64.deb ...
+Unpacking libpwquality1:amd64 (1.4.5-3build1) ...
+Selecting previously unselected package libpam-pwquality:amd64.
+Preparing to unpack .../4-libpam-pwquality_1.4.5-3build1_amd64.deb ...
+Unpacking libpam-pwquality:amd64 (1.4.5-3build1) ...
+Selecting previously unselected package wamerican.
+Preparing to unpack .../5-wamerican_2020.12.07-2_all.deb ...
+Unpacking wamerican (2020.12.07-2) ...
+Setting up libpwquality-common (1.4.5-3build1) ...
+Setting up wamerican (2020.12.07-2) ...
+Setting up libcrack2:amd64 (2.9.6-5.1build2) ...
+Setting up cracklib-runtime (2.9.6-5.1build2) ...
+Setting up libpwquality1:amd64 (1.4.5-3build1) ...
+Setting up libpam-pwquality:amd64 (1.4.5-3build1) ...
+PAM configuration
+-----------------
+
+Incompatible PAM profiles selected.
+
+The following PAM profiles cannot be used together:
+
+Pwquality password strength checking, Pwquality password strength checking
+
+Please select a different set of modules to enable.
+
+Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+
+Pending kernel upgrade!
+Running kernel version:
+  6.8.0-44-generic
+Diagnostics:
+  The currently running kernel version is not the expected kernel version 6.8.0-88-generic.
+
+Restarting the system to load the new kernel will not be handled automatically, so you should consider rebooting.
+
+Restarting services...
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ fazil @ user manager service: systemd[59196]
+ root @ session #1: login[888]
+ root @ user manager service: systemd[1443]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+[RUN] xccdf_org.ssgproject.content_rule_package_rsync_removed
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_package_rsync_removed (Remove rsync package)
+    -> Package rsync is installed. Removing it now.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages will be REMOVED:
+  rsync* ubuntu-standard*
+0 upgraded, 0 newly installed, 2 to remove and 9 not upgraded.
+After this operation, 817 kB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107070 files and directories currently installed.)
+Removing ubuntu-standard (1.539.2) ...
+Removing rsync (3.2.7-1ubuntu1.2) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107035 files and directories currently installed.)
+Purging configuration files for rsync (3.2.7-1ubuntu1.2) ...
+[+] Remediation complete. Package rsync removed.
+[RUN] xccdf_org.ssgproject.content_rule_package_telnet_removed
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_package_telnet_removed (Remove Telnet package)
+    -> Package telnet is not installed. No action required.
+[RUN] xccdf_org.ssgproject.content_rule_package_tnftp_removed
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_package_tnftp_removed (remove tnftp)
+[!] WARNING: This remediation will remove 'tnftp' and may remove packages depending on it.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages will be REMOVED:
+  tnftp
+0 upgraded, 0 newly installed, 1 to remove and 9 not upgraded.
+After this operation, 239 kB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107033 files and directories currently installed.)
+Removing tnftp (20230507-2build3) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+[+] Remediation complete: tnftp removed (if present).
+[RUN] xccdf_org.ssgproject.content_rule_package_ufw_removed
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_package_ufw_removed (Remove ufw package)
+[*] Removing ufw package...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages will be REMOVED:
+  ufw*
+0 upgraded, 0 newly installed, 1 to remove and 9 not upgraded.
+After this operation, 869 kB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107025 files and directories currently installed.)
+Removing ufw (0.36.2-6) ...
+Skip stopping firewall: ufw (not enabled)
+Processing triggers for man-db (2.12.0-4build2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 106930 files and directories currently installed.)
+Purging configuration files for ufw (0.36.2-6) ...
+Processing triggers for rsyslog (8.2312.0-3ubuntu9.1) ...
+[+] Remediation complete: ufw package removed successfully.
+[RUN] xccdf_org.ssgproject.content_rule_permissions_local_var_log
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_permissions_local_var_log
+[*] Fixing insecure permissions for log files in /var/log
+[+] Remediation complete: /var/log file permissions corrected
+[RUN] xccdf_org.ssgproject.content_rule_postfix_network_listening_disabled
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_postfix_network_listening_disabled
+[+] Remediation complete: Postfix now listens only on loopback.
+[RUN] xccdf_org.ssgproject.content_rule_service_apport_disabled
+[*] Remediating: xccdf_org.ssgproject.content_rule_service_apport_disabled
+Synchronizing state of apport.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install disable apport
+Removed "/etc/systemd/system/multi-user.target.wants/apport.service".
+Created symlink /etc/systemd/system/apport.service → /dev/null.
+Failed to reset failed state of unit apport.service: Unit apport.service not loaded.
+[+] apport service is now disabled and masked.
+[RUN] xccdf_org.ssgproject.content_rule_service_autofs_disabled
+[*] Remediating: xccdf_org.ssgproject.content_rule_service_autofs_disabled
+[*] Remediation is not applicable — package not installed
+[+] Remediation completed for: xccdf_org.ssgproject.content_rule_service_autofs_disabled
+[RUN] xccdf_org.ssgproject.content_rule_service_bluetooth_disabled
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_service_bluetooth_disabled (Disable and mask bluetooth service)
+[*] Processing bluetooth.service...
+    -> Stopping bluetooth.service
+Failed to stop bluetooth.service: Unit bluetooth.service not loaded.
+    -> Disabling and masking bluetooth.service
+Failed to disable unit: Unit file bluetooth.service does not exist.
+Unit bluetooth.service does not exist, proceeding anyway.
+Created symlink /etc/systemd/system/bluetooth.service → /dev/null.
+    -> Resetting failed state for bluetooth.service
+Failed to reset failed state of unit bluetooth.service: Unit bluetooth.service not loaded.
+[+] Remediation complete: bluetooth service disabled and masked.
+[RUN] xccdf_org.ssgproject.content_rule_service_chronyd_disabled
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_service_chronyd_disabled (disable chrony.service when chronyd is not selected)
+[*] chronyd not selected — disabling chrony.service.
+Failed to disable unit: Unit file chrony.service does not exist.
+Unit chrony.service does not exist, proceeding anyway.
+Created symlink /etc/systemd/system/chrony.service → /dev/null.
+Failed to reset failed state of unit chrony.service: Unit chrony.service not loaded.
+[+] chrony.service disabled and masked.
+[RUN] xccdf_org.ssgproject.content_rule_service_nftables_disabled
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_service_nftables_disabled
+[*] Disabling nftables.service...
+Created symlink /etc/systemd/system/nftables.service → /dev/null.
+[*] Resetting failed state...
+Failed to reset failed state of unit nftables.service: Unit nftables.service not loaded.
+[+] Remediation complete: nftables service disabled and masked
+[RUN] xccdf_org.ssgproject.content_rule_service_nftables_enabled
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_service_nftables_enabled (Enable nftables service)
+[*] Ensuring nftables service is unmasked, started, and enabled.
+    -> Unmasking nftables.service
+Removed "/etc/systemd/system/nftables.service".
+    -> Starting nftables.service
+    -> Enabling nftables.service
+Created symlink /etc/systemd/system/sysinit.target.wants/nftables.service → /usr/lib/systemd/system/nftables.service.
+[+] Remediation complete. nftables is now enabled and running.
+[RUN] xccdf_org.ssgproject.content_rule_service_rsyncd_disabled
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_service_rsyncd_disabled (Disable Rsyncd service)
+/home/fazil/ubuntu-cis-automation/remediation/xccdf_org.ssgproject.content_rule_service_rsyncd_disabled.sh: line 29: syntax error near unexpected token `then'
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_service_rsyncd_disabled
+[RUN] xccdf_org.ssgproject.content_rule_service_smb_disabled
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_service_smb_disabled (Disable SMB service - smbd)
+/home/fazil/ubuntu-cis-automation/remediation/xccdf_org.ssgproject.content_rule_service_smb_disabled.sh: line 29: syntax error near unexpected token `then'
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_service_smb_disabled
+[RUN] xccdf_org.ssgproject.content_rule_service_systemd-journald_enabled
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_service_systemd-journald_enabled (ensure systemd-journald.service is enabled)
+[*] Unmasking systemd-journald.service (if masked)...
+[*] Starting systemd-journald.service...
+[*] Enabling systemd-journald.service to start at boot...
+The unit files have no installation config (WantedBy=, RequiredBy=, UpheldBy=,
+Also=, or Alias= settings in the [Install] section, and DefaultInstance= for
+template units). This means they are not meant to be enabled or disabled using systemctl.
+ 
+Possible reasons for having these kinds of units are:
+• A unit may be statically enabled by being symlinked from another unit's
+  .wants/, .requires/, or .upholds/ directory.
+• A unit's purpose may be to act as a helper for some other unit which has
+  a requirement dependency on it.
+• A unit may be started when needed via activation (socket, path, timer,
+  D-Bus, udev, scripted systemctl call, ...).
+• In case of template units, the unit is meant to be enabled with some
+  instance name specified.
+[+] Remediation complete: systemd-journald.service is unmasked and enabled.
+[RUN] xccdf_org.ssgproject.content_rule_service_timesyncd_configured
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_service_timesyncd_configured (Configure systemd-timesyncd with multiple time servers)
+/home/fazil/ubuntu-cis-automation/remediation/xccdf_org.ssgproject.content_rule_service_timesyncd_configured.sh: line 37: syntax error near unexpected token `then'
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_service_timesyncd_configured
+[RUN] xccdf_org.ssgproject.content_rule_set_nftables_base_chain
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_set_nftables_base_chain (Set nftables base chains)
+[*] Checking for existing table: inet filter
+    -> Table found. Checking for missing base chains.
+    -> Missing chain: input. Adding it.
+    -> Missing chain: forward. Adding it.
+    -> Missing chain: output. Adding it.
+[+] Remediation complete: Base chains set up in nftables.
+[RUN] xccdf_org.ssgproject.content_rule_set_nftables_loopback_traffic
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_set_nftables_loopback_traffic
+[*] Configuring nftables loopback rules...
+[*] Saving nftables rules to /etc/inet-filter.rules
+[+] Remediation complete: loopback nftables rules applied
+[RUN] xccdf_org.ssgproject.content_rule_set_nftables_table
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_set_nftables_table (Create nftables base table)
+[*] Checking for existence of table: inet filter
+[+] Table already exists. No action needed.
+[RUN] xccdf_org.ssgproject.content_rule_sshd_disable_root_login
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sshd_disable_root_login (Disable SSHD PermitRootLogin)
+    -> Configuring PermitRootLogin to: no
+[+] Remediation complete. PermitRootLogin configured. SSH service may need restart.
+[RUN] xccdf_org.ssgproject.content_rule_sshd_enable_warning_banner_net
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sshd_enable_warning_banner_net (Set SSHD Banner to /etc/issue.net)
+    -> Configuring Banner to: /etc/issue.net
+[+] Remediation complete. Banner configured. SSH service may need restart.
+[RUN] xccdf_org.ssgproject.content_rule_sshd_set_idle_timeout
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sshd_set_idle_timeout (Set SSHD Idle Timeout)
+    -> Configuring ClientAliveInterval to: 300 seconds
+[+] Remediation complete. ClientAliveInterval configured. SSH service may need restart.
+[RUN] xccdf_org.ssgproject.content_rule_sshd_set_login_grace_time
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sshd_set_login_grace_time (Set SSHD LoginGraceTime to 60)
+    -> Configuring LoginGraceTime to: 60 seconds
+[+] Remediation complete. LoginGraceTime configured. SSH service may need restart.
+[RUN] xccdf_org.ssgproject.content_rule_sshd_set_max_auth_tries
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sshd_set_max_auth_tries (Set SSHD MaxAuthTries)
+    -> Configuring MaxAuthTries to: 4
+[+] Remediation complete. MaxAuthTries configured. SSH service may need restart.
+[RUN] xccdf_org.ssgproject.content_rule_sshd_set_maxstartups
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sshd_set_maxstartups (Set SSHD MaxStartups)
+    -> Configuring MaxStartups to: 10:30:60
+[+] Remediation complete. MaxStartups configured. SSH service may need restart.
+[RUN] xccdf_org.ssgproject.content_rule_sshd_use_strong_macs
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sshd_use_strong_macs (Set strong SSHD MACs)
+    -> Configuring MACs to: hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512,hmac-sha2-256
+[+] Remediation complete. MACs configured. SSH service may need restart.
+[RUN] xccdf_org.ssgproject.content_rule_sudo_custom_logfile
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sudo_custom_logfile (configure sudo logfile)
+[*] Adding 'Defaults logfile=/var/log/sudo.log' to /etc/sudoers
+[+] visudo validation succeeded after remediation. Removing backup.
+[+] Remediation complete: sudo logfile configured as /var/log/sudo.log.
+[RUN] xccdf_org.ssgproject.content_rule_sudo_require_reauthentication
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sudo_require_reauthentication (configure sudo timestamp_timeout=15)
+[*] Removing timestamp_timeout definitions from /etc/sudoers.d
+[*] Adding 'Defaults timestamp_timeout=15' to /etc/sudoers
+[+] visudo validation succeeded after remediation. Removing backup.
+[+] Remediation complete: sudo timestamp_timeout configured as 15 in /etc/sudoers and not overridden in /etc/sudoers.d.
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_fs_suid_dumpable
+[*] Remediating: xccdf_org.ssgproject.content_rule_sysctl_fs_suid_dumpable
+[+] Remediation complete: fs.suid_dumpable = 0
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_kernel_randomize_va_space
+[*] Remediating: xccdf_org.ssgproject.content_rule_sysctl_kernel_randomize_va_space
+[+] Remediation complete: kernel.randomize_va_space = 2
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_accept_redirects
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_accept_redirects
+[*] Commenting non-compliant settings in sysctl.d directories...
+[*] Setting runtime sysctl value...
+[*] Updating persistent configuration in /etc/sysctl.conf...
+[+] Remediation complete: net.ipv4.conf.all.accept_redirects set to 0 (runtime + persistent)
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_log_martians
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_log_martians
+[*] Commenting incorrect log_martians entries in sysctl.d configs...
+[*] Setting runtime sysctl value...
+[*] Updating persistent value in /etc/sysctl.conf...
+[+] Remediation complete: net.ipv4.conf.all.log_martians set to 1 (runtime + persistent)
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_rp_filter
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_rp_filter (Enable Reverse Path Filtering on all interfaces)
+[*] Commenting out existing 'net.ipv4.conf.all.rp_filter' occurrences in config files...
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_rp_filter
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_secure_redirects
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_secure_redirects
+[*] Commenting incorrect secure_redirects entries in sysctl.d config files...
+[*] Setting runtime sysctl value...
+[*] Updating persistent entry in /etc/sysctl.conf...
+[+] Remediation complete: net.ipv4.conf.all.secure_redirects set to 0 (runtime + persistent)
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_send_redirects
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_send_redirects (Disable IPv4 ICMP redirects on all interfaces)
+[*] Commenting out existing 'net.ipv4.conf.all.send_redirects' occurrences in config files...
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_send_redirects
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_accept_redirects
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_accept_redirects (Disable IPv4 ICMP redirects by default)
+[*] Commenting out existing 'net.ipv4.conf.default.accept_redirects' occurrences in config files...
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_accept_redirects
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_accept_source_route
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_accept_source_route
+[*] Commenting incorrect accept_source_route entries in sysctl.d configs...
+[*] Setting runtime sysctl value...
+[*] Updating persistent configuration in /etc/sysctl.conf...
+[+] Remediation complete: net.ipv4.conf.default.accept_source_route set to 0 (runtime + persistent)
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_log_martians
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_log_martians (Enable logging of Martian packets by default)
+[*] Commenting out existing 'net.ipv4.conf.default.log_martians' occurrences in config files...
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_log_martians
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_rp_filter
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_rp_filter
+[*] Commenting incorrect rp_filter entries in sysctl.d/* configs...
+[*] Applying runtime sysctl setting: rp_filter=1
+[*] Updating persistent config in /etc/sysctl.conf...
+[+] Remediation complete: net.ipv4.conf.default.rp_filter set to 1 (runtime + persistent)
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_secure_redirects
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_secure_redirects (Disable IPv4 secure ICMP redirects by default)
+[*] Commenting out existing 'net.ipv4.conf.default.secure_redirects' occurrences in config files...
+[ERROR] Remediation failed for xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_secure_redirects
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_send_redirects
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_send_redirects
+[*] Commenting incorrect send_redirects entries in sysctl.d configs...
+[*] Applying runtime sysctl value...
+[*] Updating persistent sysctl configuration...
+[+] Remediation complete: net.ipv4.conf.default.send_redirects set to 0 (runtime + persistent)
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_accept_ra
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_accept_ra
+[*] Commenting old accept_ra entries in sysctl.d and related configs...
+[*] Setting runtime sysctl value net.ipv6.conf.all.accept_ra=0
+[*] Updating /etc/sysctl.conf...
+[+] Remediation complete: net.ipv6.conf.all.accept_ra set to 0 (runtime + persistent)
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_accept_redirects
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_accept_redirects
+[*] Commenting non-compliant entries in sysctl.d directories...
+[*] Setting runtime sysctl value...
+[*] Updating persistent config in /etc/sysctl.conf...
+[+] Remediation complete: net.ipv6.conf.all.accept_redirects set to 0 (runtime + persistent)
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_ra
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_ra
+[*] Commenting old/default accept_ra entries in sysctl.d locations...
+[*] Setting runtime sysctl value...
+[*] Updating persistent configuration in /etc/sysctl.conf...
+[+] Remediation complete: net.ipv6.conf.default.accept_ra set to 0 (runtime + persistent)
+[RUN] xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_redirects
+[*] Applying remediation for: xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_redirects
+[*] Commenting invalid accept_redirects settings in sysctl.d directories...
+[*] Setting runtime sysctl value (accept_redirects=0)...
+[*] Updating persistent configuration in /etc/sysctl.conf...
+[+] Remediation complete: net.ipv6.conf.default.accept_redirects set to 0 (runtime + persistent)
+[RUN] xccdf_org.ssgproject.content_rule_use_pam_wheel_group_for_su

@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+RULE_ID="xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_source_route"
+TITLE="Ensure IPv6 source routed packets are not accepted (default)"
+
+run() {
+    # Check platform applicability (e.g., Debian/Ubuntu)
+    if ! command -v dpkg >/dev/null 2>&1; then
+        echo "NOTAPPL|$RULE_ID|dpkg not available (non-Debian/Ubuntu system)"
+        return 0
+    fi
+    
+    SYSCTL_KEY="net.ipv6.conf.default.accept_source_route"
+    EXPECTED_VALUE="0"
+    CONFIG_FILES="/etc/sysctl.conf /etc/sysctl.d/*.conf /run/sysctl.d/*.conf /usr/local/lib/sysctl.d/*.conf /etc/ufw/sysctl.conf"
+    
+    # 1. Check current running value
+    CURRENT_RUNTIME_VALUE=$(sysctl -n "$SYSCTL_KEY" 2>/dev/null || true)
+    
+    if [ "$CURRENT_RUNTIME_VALUE" != "$EXPECTED_VALUE" ]; then
+        echo "FAIL|$RULE_ID|Runtime value is $CURRENT_RUNTIME_VALUE, expected $EXPECTED_VALUE."
+        return 1
+    fi
+
+    # 2. Check persistent configuration files
+    CONFIGURED_VALUE=$(grep -P -r -i "^\s*$SYSCTL_KEY\s*=\s*\d+" $CONFIG_FILES 2>/dev/null | grep -P -v '^\s*#' | tail -n 1 | awk -F'=' '{print $2}' | tr -d '[:space:]')
+    
+    # If no configuration found, rely on runtime check (which is OK in this case)
+    if [ -z "$CONFIGURED_VALUE" ]; then
+        echo "OK|$RULE_ID|Runtime value is correct ($EXPECTED_VALUE), and no persistent configuration overrides it."
+        return 0
+    fi
+
+    # Check if the persistently configured value matches the expected value
+    if [ "$CONFIGURED_VALUE" == "$EXPECTED_VALUE" ]; then
+        echo "OK|$RULE_ID|Runtime and persistent configuration values are both $EXPECTED_VALUE."
+        return 0
+    else
+        echo "FAIL|$RULE_ID|Persistent configuration found: $SYSCTL_KEY=$CONFIGURED_VALUE, expected $EXPECTED_VALUE."
+        return 1
+    fi
+}
+
+if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+    run
+fi
