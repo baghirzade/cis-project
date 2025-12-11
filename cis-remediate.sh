@@ -52,7 +52,8 @@ for id in "${REMEDIATE_IDS[@]}"; do
 
     if [ -x "$FIX_SCRIPT" ]; then
         # Show which rule is being remediated on screen
-        echo "[REMEDIATE] $id"
+        echo
+        log_remediate "[REMEDIATE] $id"
 
         echo "[RUN] $id" >> "$REMEDIATION_LOG"
         "$FIX_SCRIPT" >> "$REMEDIATION_LOG" 2>&1 || {
