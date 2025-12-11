@@ -67,3 +67,6 @@ done
 echo
 log_info "Remediation process finished. See log:"
 log_info "$REMEDIATION_LOG"
+
+echo "A system reboot is required to complete the fix process."
+echo "Please run audit after reboot."
