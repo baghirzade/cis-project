@@ -14,6 +14,7 @@ log_info()  { echo "$(_color '32;1' '[INFO]')  $*"; }
 log_warn()  { echo "$(_color '33;1' '[WARN]')  $*"; }
 log_error() { echo "$(_color '31;1' '[ERROR]') $*" >&2; }
 log_success() { echo -e "[\e[32mSUCCESS\e[0m] $1"; }
+log_remediate() { echo -e "[\e[33mREMEDIATE\e[0m] $1"; }
 
 ensure_root() {
     if [ "$(id -u)" -ne 0 ]; then
