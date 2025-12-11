@@ -13,7 +13,7 @@ _color() {
 log_info()  { echo "$(_color '32;1' '[INFO]')  $*"; }
 log_warn()  { echo "$(_color '33;1' '[WARN]')  $*"; }
 log_error() { echo "$(_color '31;1' '[ERROR]') $*" >&2; }
-log_remediate(){ echo "$(_color '33;1' '[REMEDIATE]') $*"; }
+log_remediate() { echo "$(_color '33;1' '[REMEDIATE]') $*"; }
 log_success()  { echo "$(_color '32;1' '[SUCCESS]')  $*"; }
 
 ensure_root() {
